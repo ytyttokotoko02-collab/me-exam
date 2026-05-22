@@ -506,12 +506,10 @@ function scoreQuestion() {
   renderQ(currentIdx);
 }
 
-// 次の問題へ（スクロールあり）
 function goNext() {
   if (currentIdx < questions.length-1) {
     currentIdx++;
     renderQ(currentIdx);
-    window.scrollTo({top:0, behavior:'smooth'});
   }
 }
 
