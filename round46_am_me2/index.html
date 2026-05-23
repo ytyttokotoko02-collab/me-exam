@@ -24,6 +24,12 @@
   .progress-label { font-size:12px; color:var(--text-dim); white-space:nowrap; }
   .timer-display { font-size:13px; font-weight:700; color:var(--accent); white-space:nowrap; font-variant-numeric:tabular-nums; }
 
+  /* LANG TOGGLE */
+  .lang-toggle { display:flex; border:1px solid var(--border); border-radius:8px; overflow:hidden; flex-shrink:0; }
+  .lang-btn { padding:5px 12px; background:transparent; border:none; color:var(--text-muted); font-family:'Noto Sans JP',sans-serif; font-size:12px; font-weight:700; cursor:pointer; transition:all 0.15s; }
+  .lang-btn.active { background:var(--accent); color:#fff; }
+  .lang-btn:hover:not(.active) { color:var(--accent); }
+
   /* LAYOUT */
   .layout { display:grid; grid-template-columns:260px 1fr; min-height:calc(100vh - 57px); }
 
@@ -41,7 +47,7 @@
   .score-row { display:flex; justify-content:space-between; font-size:15px; color:var(--text-dim); margin-bottom:6px; }
   .score-row:last-child { margin-bottom:0; }
   .score-val { font-weight:700; }
-  .score-val.c { color:var(--correct); } .score-val.w { color:var(--wrong); } .score-val.u { color:var(--unanswered); }
+  .score-val.c{color:var(--correct);} .score-val.w{color:var(--wrong);} .score-val.u{color:var(--unanswered);}
   .btn-result { margin-top:14px; width:100%; padding:10px; background:linear-gradient(135deg,var(--accent),var(--accent2)); border:none; border-radius:8px; color:#fff; font-family:'Noto Sans JP',sans-serif; font-size:13px; font-weight:700; cursor:pointer; transition:opacity 0.15s; }
   .btn-result:hover { opacity:0.85; }
   .btn-reset { margin-top:8px; width:100%; padding:8px; background:transparent; border:1px solid var(--border); border-radius:8px; color:var(--text-dim); font-family:'Noto Sans JP',sans-serif; font-size:12px; cursor:pointer; transition:all 0.15s; }
@@ -58,7 +64,10 @@
   .q-image-placeholder { padding:18px 20px; background:var(--surface2); border:1px dashed var(--unanswered); border-radius:10px; font-size:13px; color:var(--unanswered); display:flex; align-items:center; gap:10px; }
   .q-hint { font-size:12px; color:var(--text-muted); margin-bottom:16px; padding:8px 14px; background:var(--surface2); border-left:3px solid var(--accent); border-radius:0 6px 6px 0; }
 
-  /* CHOICES（チェックボックス方式） */
+  /* NO TRANSLATION NOTICE */
+  .no-trans { font-size:12px; color:var(--unanswered); margin-bottom:12px; padding:8px 14px; background:rgba(243,156,18,0.08); border:1px solid rgba(243,156,18,0.3); border-radius:6px; display:none; }
+
+  /* CHOICES */
   .choices { display:flex; flex-direction:column; gap:10px; margin-bottom:28px; }
   .choice-item { display:flex; align-items:flex-start; gap:12px; padding:14px 16px; background:var(--surface); border:1px solid var(--border); border-radius:10px; transition:all 0.15s; cursor:pointer; }
   .choice-item:hover:not(.locked) { border-color:var(--accent); background:rgba(79,142,247,0.07); }
@@ -67,19 +76,16 @@
   .choice-item.reveal-correct { border-color:var(--correct); background:rgba(46,204,113,0.07); }
   .choice-item.reveal-wrong   { border-color:var(--wrong);   background:rgba(231,76,60,0.07); }
   .choice-item.reveal-missed  { border-color:var(--unanswered); background:rgba(243,156,18,0.07); }
-
   .choice-check { width:24px; height:24px; border-radius:6px; border:2px solid var(--border); background:var(--surface2); display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px; transition:all 0.15s; }
   .choice-item.selected .choice-check { border-color:var(--accent); background:var(--accent); }
   .choice-item.reveal-correct .choice-check { border-color:var(--correct); background:var(--correct); }
-  .choice-item.reveal-wrong   .choice-check { border-color:var(--wrong);   background:var(--wrong); }
+  .choice-item.reveal-wrong   .choice-check { border-color:var(--wrong); background:var(--wrong); }
   .choice-check svg { display:none; }
   .choice-item.selected .choice-check svg,
   .choice-item.reveal-correct .choice-check svg,
   .choice-item.reveal-wrong   .choice-check svg { display:block; }
-
   .choice-num { min-width:26px; height:26px; border-radius:50%; background:var(--surface2); border:1px solid var(--border); display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; color:var(--text-dim); flex-shrink:0; margin-top:1px; }
   .choice-text { font-size:17px; line-height:1.75; color:var(--text); flex:1; }
-
   .result-icon { min-width:28px; height:28px; border-radius:50%; display:none; align-items:center; justify-content:center; font-size:15px; font-weight:700; flex-shrink:0; margin-top:2px; }
   .result-icon.show { display:flex; }
   .result-icon.ok  { background:rgba(46,204,113,0.2); color:var(--correct); }
@@ -140,8 +146,6 @@
   .review-row .rr-status.c{color:var(--correct);} .review-row .rr-status.w{color:var(--wrong);} .review-row .rr-status.u{color:var(--unanswered);}
   .review-row .rr-text { color:var(--text-dim); flex:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   .result-actions { display:flex; gap:12px; flex-wrap:wrap; }
-
-  /* SEND BUTTON */
   .btn-send { padding:12px 28px; background:linear-gradient(135deg,#2ecc71,#27ae60); border:none; border-radius:10px; color:#fff; font-family:'Noto Sans JP',sans-serif; font-size:14px; font-weight:700; cursor:pointer; transition:opacity 0.15s; }
   .btn-send:hover:not(:disabled) { opacity:0.85; }
   .btn-send:disabled { opacity:0.5; cursor:default; }
@@ -172,20 +176,24 @@
     <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progressFill"></div></div>
     <div class="progress-label" id="progressLabel">— / —</div>
     <div class="timer-display" id="timerDisplay" style="display:none">⏱ 00:00:00</div>
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="btnJa" onclick="setLang('ja')">JP</button>
+      <button class="lang-btn"        id="btnEn" onclick="setLang('en')">EN</button>
+    </div>
   </div>
 </div>
 
 <div class="layout">
   <aside class="sidebar">
-    <div class="sidebar-heading">問題一覧</div>
+    <div class="sidebar-heading" id="sb-heading">問題一覧</div>
     <div class="q-grid" id="qGrid"></div>
     <div class="sidebar-score">
-      <div class="score-row"><span>正解</span><span class="score-val c" id="scoreCorrect">0</span></div>
-      <div class="score-row"><span>不正解</span><span class="score-val w" id="scoreWrong">0</span></div>
-      <div class="score-row"><span>未採点</span><span class="score-val u" id="scoreUnanswered">—</span></div>
+      <div class="score-row"><span id="sb-correct">正解</span><span class="score-val c" id="scoreCorrect">0</span></div>
+      <div class="score-row"><span id="sb-wrong">不正解</span><span class="score-val w" id="scoreWrong">0</span></div>
+      <div class="score-row"><span id="sb-unscored">未採点</span><span class="score-val u" id="scoreUnanswered">—</span></div>
     </div>
-    <button class="btn-result" onclick="showResult()">結果を見る</button>
-    <button class="btn-reset" onclick="resetAll()">最初からやり直す</button>
+    <button class="btn-result" id="sb-btn-result" onclick="showResult()">結果を見る</button>
+    <button class="btn-reset"  id="sb-btn-reset"  onclick="resetAll()">最初からやり直す</button>
   </aside>
 
   <div id="mainArea">
@@ -205,19 +213,136 @@ const IMAGE_DIR = 'images/';
 const GAS_URL   = 'https://script.google.com/macros/s/AKfycbyguUSm5x9JoTNUhrxNztVrtsbcISPOXDxAzIMsFjOTI-pVt2DnGSLoa62wEy6r3ObP/exec';
 
 // =============================================
+//  多言語テキスト定義
+// =============================================
+const I18N = {
+  ja: {
+    loading:        'データを読み込み中...',
+    sbHeading:      '問題一覧',
+    sbCorrect:      '正解',
+    sbWrong:        '不正解',
+    sbUnscored:     '未採点',
+    sbBtnResult:    '結果を見る',
+    sbBtnReset:     '最初からやり直す',
+    namLabel:       '氏名',
+    idLabel:        '学籍番号 / 識別番号（英数字）',
+    namPh:          '例）山田 太郎',
+    idPh:           '例）ME2024001',
+    btnStart:       '開始する',
+    hint:           (n) => `正解と思う選択肢を選んでください。（${n}つ選択）`,
+    noTrans:        '※ この問題の英訳は準備中です。日本語で表示しています。',
+    btnScore:       '採点する',
+    scored:         '採点済み',
+    selectMore:     (n) => `${n}つ選択してください`,
+    selectMoreLeft: (n) => `あと ${n} つ選択してください`,
+    correct:        (t) => `✓ 正解！　正答: ${t}`,
+    wrong:          (t) => `✗ 不正解　正答: ${t}`,
+    btnPrev:        '← 前の問題',
+    btnNext:        '次の問題 →',
+    btnLast:        '最後の問題',
+    resultTitle:    '結果発表',
+    resultCorrect:  '正解',
+    resultWrong:    '不正解',
+    resultUnscored: '未採点',
+    resultTime:     (t) => `⏱ 解答時間: ${t}`,
+    reviewHeader:   '問題別結果（クリックで問題へ）',
+    btnBack:        '問題に戻る',
+    btnSend:        '結果を送信する',
+    btnSent:        '送信済み',
+    sending:        '送信中...',
+    sendOk:         '✓ 送信しました',
+    sendErr:        '送信に失敗しました。もう一度お試しください。',
+    confirmSend:    (n,i) => `結果を送信してよいですか？\n\n氏名: ${n}\n学籍番号: ${i}`,
+    confirmReset:   '最初からやり直しますか？\n（問題順・選択肢順が再シャッフルされます）',
+    statusNone:     '未',
+    statusOk:       '○',
+    statusNg:       '×',
+    imgNotFound:    (f) => `⚠️ 画像ファイルが見つかりません: ${f}`,
+  },
+  en: {
+    loading:        'Loading data...',
+    sbHeading:      'Questions',
+    sbCorrect:      'Correct',
+    sbWrong:        'Incorrect',
+    sbUnscored:     'Unscored',
+    sbBtnResult:    'View Results',
+    sbBtnReset:     'Start Over',
+    namLabel:       'Full Name',
+    idLabel:        'Student ID / Identifier (alphanumeric)',
+    namPh:          'e.g. Taro Yamada',
+    idPh:           'e.g. ME2024001',
+    btnStart:       'Start',
+    hint:           (n) => `Select the correct answer(s). (Choose ${n})`,
+    noTrans:        '※ English translation for this question is not yet available. Showing in Japanese.',
+    btnScore:       'Check Answer',
+    scored:         'Scored',
+    selectMore:     (n) => `Please select ${n} answer(s)`,
+    selectMoreLeft: (n) => `Please select ${n} more`,
+    correct:        (t) => `✓ Correct!　Answer: ${t}`,
+    wrong:          (t) => `✗ Incorrect　Answer: ${t}`,
+    btnPrev:        '← Previous',
+    btnNext:        'Next →',
+    btnLast:        'Last Question',
+    resultTitle:    'Results',
+    resultCorrect:  'Correct',
+    resultWrong:    'Incorrect',
+    resultUnscored: 'Unscored',
+    resultTime:     (t) => `⏱ Time: ${t}`,
+    reviewHeader:   'Question Results (click to review)',
+    btnBack:        'Back to Questions',
+    btnSend:        'Submit Results',
+    btnSent:        'Submitted',
+    sending:        'Submitting...',
+    sendOk:         '✓ Submitted successfully',
+    sendErr:        'Submission failed. Please try again.',
+    confirmSend:    (n,i) => `Submit your results?\n\nName: ${n}\nID: ${i}`,
+    confirmReset:   'Start over?\n(Questions and choices will be reshuffled)',
+    statusNone:     '-',
+    statusOk:       '○',
+    statusNg:       '×',
+    imgNotFound:    (f) => `⚠️ Image file not found: ${f}`,
+  }
+};
+
+// =============================================
 //  STATE
 // =============================================
 let questions  = [];
-let userChecks = []; // userChecks[qIdx] = Set of checked choice numbers (1-based)
-let scored     = []; // null | true | false
+let userChecks = [];
+let scored     = [];
 let currentIdx = 0;
 let examInfo   = {};
 let userName   = '';
 let studentId  = '';
-
-// タイマー
-let timerSeconds = 0;
+let lang       = 'ja';
+let timerSeconds  = 0;
 let timerInterval = null;
+
+// =============================================
+//  LANG
+// =============================================
+function t(key, ...args) {
+  const val = I18N[lang][key];
+  return typeof val === 'function' ? val(...args) : val;
+}
+
+function setLang(l) {
+  lang = l;
+  document.getElementById('btnJa').classList.toggle('active', l==='ja');
+  document.getElementById('btnEn').classList.toggle('active', l==='en');
+  document.documentElement.lang = l==='ja' ? 'ja' : 'en';
+  // サイドバーの静的テキストを更新
+  const ids = { 'sb-heading':'sbHeading','sb-correct':'sbCorrect','sb-wrong':'sbWrong',
+                'sb-unscored':'sbUnscored','sb-btn-result':'sbBtnResult','sb-btn-reset':'sbBtnReset' };
+  Object.entries(ids).forEach(([id,key]) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = t(key);
+  });
+  // 問題表示中なら再描画
+  if (questions.length > 0 && document.getElementById('quizArea')) {
+    renderQ(currentIdx);
+  }
+}
 
 // =============================================
 //  TIMER
@@ -230,16 +355,11 @@ function startTimer() {
     document.getElementById('timerDisplay').textContent = '⏱ ' + formatTime(timerSeconds);
   }, 1000);
 }
-
-function stopTimer() {
-  clearInterval(timerInterval);
-  timerInterval = null;
-}
-
+function stopTimer() { clearInterval(timerInterval); timerInterval = null; }
 function formatTime(s) {
-  const h = String(Math.floor(s / 3600)).padStart(2, '0');
-  const m = String(Math.floor((s % 3600) / 60)).padStart(2, '0');
-  const sec = String(s % 60).padStart(2, '0');
+  const h   = String(Math.floor(s/3600)).padStart(2,'0');
+  const m   = String(Math.floor((s%3600)/60)).padStart(2,'0');
+  const sec = String(s%60).padStart(2,'0');
   return `${h}:${m}:${sec}`;
 }
 
@@ -249,7 +369,7 @@ function formatTime(s) {
 async function loadData() {
   try {
     const res = await fetch(JSON_FILE);
-    if (!res.ok) throw new Error(`HTTPエラー: ${res.status}`);
+    if (!res.ok) throw new Error(`HTTP Error: ${res.status}`);
     const data = await res.json();
     examInfo = data.exam || {};
     document.getElementById('topbarTitle').textContent =
@@ -278,14 +398,14 @@ function showStartScreen() {
         <div class="start-title">第${examInfo.round||'?'}回 第２種ME技術実力検定試験</div>
         <div class="start-subtitle">${examInfo.session||''} 全${examInfo.total||60}問</div>
         <div class="form-group">
-          <label class="form-label">氏名</label>
-          <input class="form-input" id="inputName" type="text" placeholder="例）山田 太郎" oninput="checkStartBtn()">
+          <label class="form-label" id="lbl-name">${t('namLabel')}</label>
+          <input class="form-input" id="inputName" type="text" placeholder="${t('namPh')}" oninput="checkStartBtn()">
         </div>
         <div class="form-group">
-          <label class="form-label">学籍番号 / 識別番号（英数字）</label>
-          <input class="form-input" id="inputId" type="text" placeholder="例）ME2024001" oninput="checkStartBtn()">
+          <label class="form-label" id="lbl-id">${t('idLabel')}</label>
+          <input class="form-input" id="inputId" type="text" placeholder="${t('idPh')}" oninput="checkStartBtn()">
         </div>
-        <button class="btn-start" id="btnStart" onclick="startQuiz()" disabled>開始する</button>
+        <button class="btn-start" id="btnStart" onclick="startQuiz()" disabled>${t('btnStart')}</button>
       </div>
     </div>`;
 }
@@ -308,28 +428,34 @@ function startQuiz() {
 //  SHUFFLE & INIT
 // =============================================
 function shuffle(arr) {
-  const a = [...arr];
-  for (let i = a.length-1; i>0; i--) {
-    const j = Math.floor(Math.random()*(i+1));
-    [a[i],a[j]]=[a[j],a[i]];
-  }
+  const a=[...arr];
+  for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}
   return a;
 }
 
 function initQuestions(rawQuestions) {
   const order = shuffle(rawQuestions.map((_,i)=>i));
   questions = order.map(idx => {
-    const q = rawQuestions[idx];
+    const q  = rawQuestions[idx];
     const ci = q.choices.map((_,i)=>i);
     const si = shuffle(ci);
-    const shuffledChoices = si.map(i=>q.choices[i]);
-    // answer配列対応（旧形式の数値もサポート）
+    const shuffledChoices    = si.map(i=>q.choices[i]);
+    const shuffledChoices_en = q.choices_en ? si.map(i=>q.choices_en[i]) : null;
     const origAnswers = Array.isArray(q.answer) ? q.answer : [q.answer];
-    const newAnswers  = origAnswers.map(a => si.indexOf(a-1)+1);
+    const newAnswers  = origAnswers.map(a=>si.indexOf(a-1)+1);
     const selectCount = q.select || origAnswers.length;
-    return { no:q.no, text:q.text, image:q.image||null, choices:shuffledChoices, answer:newAnswers, select:selectCount };
+    return {
+      no:         q.no,
+      text:       q.text,
+      text_en:    q.text_en    || null,
+      choices:    shuffledChoices,
+      choices_en: shuffledChoices_en,
+      image:      q.image||null,
+      answer:     newAnswers,
+      select:     selectCount
+    };
   });
-  userChecks = questions.map(() => new Set());
+  userChecks = questions.map(()=>new Set());
   scored     = new Array(questions.length).fill(null);
   currentIdx = 0;
 }
@@ -344,37 +470,38 @@ function renderMainArea() {
         <div class="q-number" id="qNumber"></div>
         <div class="q-image-badge" id="qImageBadge" style="display:none">📷 図あり</div>
       </div>
+      <div class="no-trans" id="noTransNotice"></div>
       <div class="q-text" id="qText"></div>
       <div class="q-image" id="qImage" style="display:none"></div>
       <div class="q-hint" id="qHint"></div>
       <div class="choices" id="choicesArea"></div>
       <div class="score-area">
-        <button class="btn-score" id="btnScore" onclick="scoreQuestion()" disabled>採点する</button>
+        <button class="btn-score" id="btnScore" onclick="scoreQuestion()" disabled>${t('btnScore')}</button>
         <div class="score-msg" id="scoreMsg"></div>
       </div>
       <div class="nav-row">
-        <button class="nav-btn" id="btnPrev" onclick="goTo(currentIdx-1)">← 前の問題</button>
-        <button class="nav-btn primary" id="btnNext" onclick="goNext()">次の問題 →</button>
+        <button class="nav-btn" id="btnPrev" onclick="goTo(currentIdx-1)">${t('btnPrev')}</button>
+        <button class="nav-btn primary" id="btnNext" onclick="goNext()">${t('btnNext')}</button>
       </div>
     </div>
     <div class="result-screen" id="resultScreen">
-      <div class="result-title">結果発表</div>
+      <div class="result-title" id="res-title">${t('resultTitle')}</div>
       <div class="result-big" id="resBig">—</div>
       <div class="result-sub" id="resSub"></div>
       <div class="result-time" id="resTime"></div>
       <div class="result-grid">
-        <div class="result-card"><div class="rc-num c" id="resC">0</div><div class="rc-label">正解</div></div>
-        <div class="result-card"><div class="rc-num w" id="resW">0</div><div class="rc-label">不正解</div></div>
-        <div class="result-card"><div class="rc-num u" id="resU">0</div><div class="rc-label">未採点</div></div>
+        <div class="result-card"><div class="rc-num c" id="resC">0</div><div class="rc-label" id="res-lbl-c">${t('resultCorrect')}</div></div>
+        <div class="result-card"><div class="rc-num w" id="resW">0</div><div class="rc-label" id="res-lbl-w">${t('resultWrong')}</div></div>
+        <div class="result-card"><div class="rc-num u" id="resU">0</div><div class="rc-label" id="res-lbl-u">${t('resultUnscored')}</div></div>
       </div>
       <div class="result-review">
-        <div class="result-review-header">問題別結果（クリックで問題へ）</div>
+        <div class="result-review-header" id="res-review-hdr">${t('reviewHeader')}</div>
         <div class="result-review-list" id="reviewList"></div>
       </div>
       <div class="result-actions">
-        <button class="nav-btn primary" onclick="backToQuiz()">問題に戻る</button>
-        <button class="nav-btn" onclick="resetAll()">最初からやり直す</button>
-        <button class="btn-send" id="btnSend" onclick="sendResult()">結果を送信する</button>
+        <button class="nav-btn primary" id="res-btn-back" onclick="backToQuiz()">${t('btnBack')}</button>
+        <button class="nav-btn" id="res-btn-reset" onclick="resetAll()">${t('sbBtnReset')}</button>
+        <button class="btn-send" id="btnSend" onclick="sendResult()">${t('btnSend')}</button>
       </div>
       <div class="send-msg" id="sendMsg"></div>
     </div>`;
@@ -390,11 +517,25 @@ function renderQ(idx) {
   const checks   = userChecks[idx];
   const isScored = scored[idx] !== null;
 
+  // 言語に応じたテキスト取得
+  const hasEn    = !!(q.text_en && q.choices_en);
+  const useEn    = lang === 'en';
+  const showText = (useEn && hasEn) ? q.text_en    : q.text;
+  const showChoices = (useEn && hasEn) ? q.choices_en : q.choices;
+
+  // 英語未対応の通知
+  const noTrans = document.getElementById('noTransNotice');
+  if (useEn && !hasEn) {
+    noTrans.style.display = 'block';
+    noTrans.textContent   = t('noTrans');
+  } else {
+    noTrans.style.display = 'none';
+  }
+
   document.getElementById('qNumber').textContent =
-    `問題 ${idx+1} / ${questions.length}　（元番号: 問${q.no}）`;
-  document.getElementById('qText').textContent = q.text;
-  document.getElementById('qHint').textContent =
-    `正解と思う選択肢を選んでください。（${q.select}つ選択）`;
+    `Q ${idx+1} / ${questions.length}　(No.${q.no})`;
+  document.getElementById('qText').textContent = showText;
+  document.getElementById('qHint').textContent = t('hint', q.select);
 
   // 画像
   const imgBadge = document.getElementById('qImageBadge');
@@ -402,8 +543,8 @@ function renderQ(idx) {
   if (q.image) {
     imgBadge.style.display = 'inline-block';
     imgArea.style.display  = 'block';
-    imgArea.innerHTML = `<img src="${IMAGE_DIR}${q.image}" alt="問${q.no}の図"
-      onerror="this.parentElement.innerHTML='<div class=q-image-placeholder>⚠️ 画像ファイルが見つかりません: ${q.image}</div>'">`;
+    imgArea.innerHTML = `<img src="${IMAGE_DIR}${q.image}" alt="Q${q.no}"
+      onerror="this.parentElement.innerHTML='<div class=q-image-placeholder>${t('imgNotFound', q.image)}</div>'">`;
   } else {
     imgBadge.style.display = 'none';
     imgArea.style.display  = 'none';
@@ -413,33 +554,27 @@ function renderQ(idx) {
   // 選択肢
   const area = document.getElementById('choicesArea');
   area.innerHTML = '';
-  q.choices.forEach((text, ci) => {
-    const num = ci+1;
-    const isChecked      = checks.has(num);
-    const isCorrect      = q.answer.includes(num);
-    const wasChecked     = isChecked;
-
+  showChoices.forEach((text, ci) => {
+    const num       = ci+1;
+    const isChecked = checks.has(num);
+    const isCorrect = q.answer.includes(num);
     const div = document.createElement('div');
     div.className = 'choice-item';
-
     if (isScored) {
       div.classList.add('locked');
-      if (isChecked && isCorrect)  div.classList.add('reveal-correct'); // 正解かつ選択
-      else if (isChecked && !isCorrect) div.classList.add('reveal-wrong');  // 誤選択
-      else if (!isChecked && isCorrect) div.classList.add('reveal-missed'); // 正解なのに未選択
+      if (isChecked && isCorrect)   div.classList.add('reveal-correct');
+      else if (isChecked && !isCorrect) div.classList.add('reveal-wrong');
+      else if (!isChecked && isCorrect) div.classList.add('reveal-missed');
     } else {
       if (isChecked) div.classList.add('selected');
-      div.addEventListener('click', () => toggleCheck(idx, num));
+      div.addEventListener('click', ()=>toggleCheck(idx, num));
     }
-
-    // 採点後アイコン
     let iconClass='', iconText='';
     if (isScored) {
-      if (isChecked && isCorrect)  { iconClass='ok';   iconText='✓'; }
+      if (isChecked && isCorrect)   { iconClass='ok';   iconText='✓'; }
       else if (isChecked && !isCorrect) { iconClass='ng';   iconText='✗'; }
       else if (!isChecked && isCorrect) { iconClass='miss'; iconText='!'; }
     }
-
     div.innerHTML = `
       <div class="choice-check">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -456,29 +591,28 @@ function renderQ(idx) {
   const btnScore = document.getElementById('btnScore');
   const scoreMsg = document.getElementById('scoreMsg');
   if (isScored) {
-    btnScore.disabled = true;
-    btnScore.textContent = '採点済み';
-    const answerTexts = q.answer.map(a => `${a}「${q.choices[a-1]}」`).join('、');
-    scoreMsg.className = 'score-msg ' + (scored[idx] ? 'correct-msg' : 'wrong-msg');
-    scoreMsg.textContent = scored[idx]
-      ? `✓ 正解！　正答: ${answerTexts}`
-      : `✗ 不正解　正答: ${answerTexts}`;
+    btnScore.disabled    = true;
+    btnScore.textContent = t('scored');
+    const answerTexts = q.answer.map(a=>`${a}「${showChoices[a-1]}」`).join('、');
+    scoreMsg.className   = 'score-msg ' + (scored[idx] ? 'correct-msg' : 'wrong-msg');
+    scoreMsg.textContent = scored[idx] ? t('correct', answerTexts) : t('wrong', answerTexts);
   } else {
     const ready = checks.size >= q.select;
     btnScore.disabled    = !ready;
-    btnScore.textContent = '採点する';
+    btnScore.textContent = t('btnScore');
     scoreMsg.className   = 'score-msg';
-    scoreMsg.textContent = checks.size === 0
-      ? `${q.select}つ選択してください`
+    scoreMsg.textContent = checks.size===0
+      ? t('selectMore', q.select)
       : checks.size < q.select
-        ? `あと ${q.select - checks.size} つ選択してください`
+        ? t('selectMoreLeft', q.select - checks.size)
         : '';
   }
 
-  document.getElementById('btnPrev').disabled = idx===0;
+  document.getElementById('btnPrev').disabled    = idx===0;
+  document.getElementById('btnPrev').textContent = t('btnPrev');
   const btnNext = document.getElementById('btnNext');
-  btnNext.disabled = idx===questions.length-1;
-  btnNext.textContent = idx===questions.length-1 ? '最後の問題' : '次の問題 →';
+  btnNext.disabled    = idx===questions.length-1;
+  btnNext.textContent = idx===questions.length-1 ? t('btnLast') : t('btnNext');
 
   updateSidebar();
   updateProgressBar();
@@ -487,57 +621,44 @@ function renderQ(idx) {
 function toggleCheck(qIdx, num) {
   const q      = questions[qIdx];
   const checks = userChecks[qIdx];
-  if (checks.has(num)) {
-    checks.delete(num);
-  } else {
-    // 1択の場合は前の選択をクリア
-    if (q.select === 1) checks.clear();
-    checks.add(num);
-  }
+  if (checks.has(num)) { checks.delete(num); }
+  else { if (q.select===1) checks.clear(); checks.add(num); }
   renderQ(qIdx);
 }
 
 function scoreQuestion() {
   const q      = questions[currentIdx];
   const checks = userChecks[currentIdx];
-  const correct = q.answer.length === checks.size &&
-                  q.answer.every(a => checks.has(a));
-  scored[currentIdx] = correct;
+  scored[currentIdx] = q.answer.length===checks.size && q.answer.every(a=>checks.has(a));
   renderQ(currentIdx);
 }
 
 function goNext() {
-  if (currentIdx < questions.length-1) {
-    currentIdx++;
-    renderQ(currentIdx);
-  }
+  if (currentIdx < questions.length-1) { currentIdx++; renderQ(currentIdx); }
 }
-
 function goTo(idx) {
-  if (idx<0||idx>=questions.length) return;
-  renderQ(idx);
-  // サイドバーからのジャンプはスクロールなし
+  if (idx>=0 && idx<questions.length) renderQ(idx);
 }
 
 // =============================================
 //  SIDEBAR
 // =============================================
 function updateSidebar() {
+  // 静的テキスト
+  const ids = { 'sb-heading':'sbHeading','sb-correct':'sbCorrect','sb-wrong':'sbWrong',
+                'sb-unscored':'sbUnscored','sb-btn-result':'sbBtnResult','sb-btn-reset':'sbBtnReset' };
+  Object.entries(ids).forEach(([id,key])=>{ const el=document.getElementById(id); if(el) el.textContent=t(key); });
+
   const grid = document.getElementById('qGrid');
-  grid.innerHTML = '';
-  let correct=0, wrong=0, unscored=0;
-  questions.forEach((q,i) => {
-    const btn = document.createElement('button');
-    btn.className = 'q-btn';
-    btn.textContent = i+1;
-    btn.onclick = ()=>goTo(i);
-    if (i===currentIdx) btn.classList.add('current');
-    if (scored[i]===true)  { btn.classList.add('scored-correct'); correct++; }
-    else if (scored[i]===false) { btn.classList.add('scored-wrong'); wrong++; }
-    else {
-      if (userChecks[i].size>0) btn.classList.add('in-progress');
-      unscored++;
-    }
+  grid.innerHTML='';
+  let correct=0,wrong=0,unscored=0;
+  questions.forEach((q,i)=>{
+    const btn=document.createElement('button');
+    btn.className='q-btn'; btn.textContent=i+1; btn.onclick=()=>goTo(i);
+    if(i===currentIdx) btn.classList.add('current');
+    if(scored[i]===true)  { btn.classList.add('scored-correct'); correct++; }
+    else if(scored[i]===false) { btn.classList.add('scored-wrong'); wrong++; }
+    else { if(userChecks[i].size>0) btn.classList.add('in-progress'); unscored++; }
     grid.appendChild(btn);
   });
   document.getElementById('scoreCorrect').textContent    = correct;
@@ -558,28 +679,37 @@ function showResult() {
   stopTimer();
   document.getElementById('quizArea').style.display='none';
   document.getElementById('resultScreen').style.display='block';
-  let correct=0, wrong=0, unscored=0;
+  let correct=0,wrong=0,unscored=0;
   scored.forEach(s=>{ if(s===true)correct++; else if(s===false)wrong++; else unscored++; });
-  const pct = Math.round(correct/questions.length*100);
-  document.getElementById('resBig').textContent  = `${correct} / ${questions.length}`;
-  document.getElementById('resSub').textContent  = `正解率 ${pct}%`;
-  document.getElementById('resTime').textContent = `⏱ 解答時間: ${formatTime(timerSeconds)}`;
-  document.getElementById('resC').textContent    = correct;
-  document.getElementById('resW').textContent    = wrong;
-  document.getElementById('resU').textContent    = unscored;
+  const pct=Math.round(correct/questions.length*100);
+  document.getElementById('resBig').textContent   = `${correct} / ${questions.length}`;
+  document.getElementById('resSub').textContent   = lang==='ja' ? `正解率 ${pct}%` : `Score: ${pct}%`;
+  document.getElementById('resTime').textContent  = t('resultTime', formatTime(timerSeconds));
+  document.getElementById('resC').textContent     = correct;
+  document.getElementById('resW').textContent     = wrong;
+  document.getElementById('resU').textContent     = unscored;
+  document.getElementById('res-title').textContent    = t('resultTitle');
+  document.getElementById('res-lbl-c').textContent    = t('resultCorrect');
+  document.getElementById('res-lbl-w').textContent    = t('resultWrong');
+  document.getElementById('res-lbl-u').textContent    = t('resultUnscored');
+  document.getElementById('res-review-hdr').textContent = t('reviewHeader');
+  document.getElementById('res-btn-back').textContent  = t('btnBack');
+  document.getElementById('res-btn-reset').textContent = t('sbBtnReset');
+  document.getElementById('btnSend').textContent       = t('btnSend');
 
-  const list = document.getElementById('reviewList');
+  const list=document.getElementById('reviewList');
   list.innerHTML='';
   questions.forEach((q,i)=>{
     const s=scored[i];
-    const statusClass = s===null?'u':s?'c':'w';
-    const statusText  = s===null?'未':s?'○':'×';
+    const statusClass=s===null?'u':s?'c':'w';
+    const statusText =s===null?t('statusNone'):s?t('statusOk'):t('statusNg');
+    const dispText   =(lang==='en'&&q.text_en)?q.text_en:q.text;
     const row=document.createElement('div');
     row.className='review-row';
     row.innerHTML=`
-      <span class="rr-num">問 ${i+1}（No.${q.no}）</span>
+      <span class="rr-num">Q ${i+1}（No.${q.no}）</span>
       <span class="rr-status ${statusClass}">${statusText}</span>
-      <span class="rr-text">${q.text.slice(0,40)}…</span>`;
+      <span class="rr-text">${dispText.slice(0,40)}…</span>`;
     row.onclick=()=>{backToQuiz();goTo(i);};
     list.appendChild(row);
   });
@@ -592,7 +722,7 @@ function backToQuiz() {
 }
 
 function resetAll() {
-  if (!confirm('最初からやり直しますか？\n（問題順・選択肢順が再シャッフルされます）')) return;
+  if (!confirm(t('confirmReset'))) return;
   location.reload();
 }
 
@@ -600,64 +730,46 @@ function resetAll() {
 //  SEND RESULT
 // =============================================
 function sendResult() {
-  const btn     = document.getElementById('btnSend');
-  const msgArea = document.getElementById('sendMsg');
+  const btn=document.getElementById('btnSend');
+  const msgArea=document.getElementById('sendMsg');
+  if (!confirm(t('confirmSend', userName, studentId))) return;
+  btn.disabled=true; btn.textContent=t('sending');
+  msgArea.className='send-msg'; msgArea.textContent='';
 
-  // 確認ダイアログ
-  if (!confirm(`結果を送信してよいですか？\n\n氏名: ${userName}\n学籍番号: ${studentId}`)) return;
-
-  btn.disabled = true;
-  btn.textContent = '送信中...';
-  msgArea.className = 'send-msg';
-  msgArea.textContent = '';
-
-  // 元番号順（1〜60）に結果を並び替え
-  const questionResults = {};
-  questions.forEach((q, i) => {
-    const s = scored[i];
-    questionResults[q.no] = s===true ? '○' : s===false ? '×' : '未';
+  const questionResults={};
+  questions.forEach((q,i)=>{
+    const s=scored[i];
+    questionResults[q.no]=s===true?'○':s===false?'×':'未';
   });
 
-  // タイムスタンプ
-  const now = new Date();
-  const timestamp = `${now.getFullYear()}/${String(now.getMonth()+1).padStart(2,'0')}/${String(now.getDate()).padStart(2,'0')} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')}`;
+  const now=new Date();
+  const timestamp=`${now.getFullYear()}/${String(now.getMonth()+1).padStart(2,'0')}/${String(now.getDate()).padStart(2,'0')} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')}`;
 
-  let correct=0, wrong=0, unscored=0;
+  let correct=0,wrong=0,unscored=0;
   scored.forEach(s=>{ if(s===true)correct++; else if(s===false)wrong++; else unscored++; });
-  const pct = Math.round(correct/questions.length*100)+'%';
-  const sessionCode = examInfo.session==='午前' ? 'am' : 'pm';
+  const sessionCode=examInfo.session==='午前'?'am':'pm';
 
-  const payload = {
-    timestamp,
-    name:      userName,
-    studentId: studentId,
-    time:      formatTime(timerSeconds),
-    correct,
-    wrong,
-    unscored,
-    rate:      pct,
-    round:     examInfo.round,
-    session:   sessionCode,
-    questions: questionResults
-  };
-
-  // GASへ送信（no-corsモード）
-  fetch(GAS_URL, {
-    method:  'POST',
-    mode:    'no-cors',
-    headers: { 'Content-Type': 'application/json' },
-    body:    JSON.stringify(payload)
+  fetch(GAS_URL,{
+    method:'POST', mode:'no-cors',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({
+      timestamp, name:userName, studentId,
+      time:formatTime(timerSeconds),
+      correct, wrong, unscored,
+      rate:Math.round(correct/questions.length*100)+'%',
+      round:examInfo.round, session:sessionCode,
+      questions:questionResults
+    })
   })
-  .then(() => {
-    btn.textContent   = '送信済み';
-    msgArea.className = 'send-msg ok';
-    msgArea.textContent = '✓ 送信しました';
+  .then(()=>{
+    btn.textContent=t('btnSent');
+    msgArea.className='send-msg ok';
+    msgArea.textContent=t('sendOk');
   })
-  .catch(err => {
-    btn.disabled    = false;
-    btn.textContent = '結果を送信する';
-    msgArea.className = 'send-msg err';
-    msgArea.textContent = '送信に失敗しました。もう一度お試しください。';
+  .catch(()=>{
+    btn.disabled=false; btn.textContent=t('btnSend');
+    msgArea.className='send-msg err';
+    msgArea.textContent=t('sendErr');
   });
 }
 

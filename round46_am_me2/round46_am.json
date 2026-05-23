@@ -19,7 +19,15 @@
       "answer": [
         5
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Approximately what percentage of primary urine is reabsorbed by the renal tubules?",
+      "choices_en": [
+        "1",
+        "30",
+        "60",
+        "75",
+        "99"
+      ]
     },
     {
       "no": 2,
@@ -35,7 +43,15 @@
       "answer": [
         2
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following is correct regarding respiration in adults?",
+      "choices_en": [
+        "The respiratory muscles are smooth muscles.",
+        "Alveolar dead space is part of the physiological dead space.",
+        "% vital capacity is a measured value.",
+        "Intrapleural pressure becomes positive during inspiration.",
+        "The total surface area of all alveoli is approximately 10 m²."
+      ]
     },
     {
       "no": 3,
@@ -51,7 +67,15 @@
       "answer": [
         3
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following statements about blood is INCORRECT?",
+      "choices_en": [
+        "The lifespan of red blood cells is approximately 120 days.",
+        "Red blood cells are the most numerous cellular component of blood.",
+        "Lymphocytes are the most numerous type of white blood cell.",
+        "Serum is plasma from which clotting factors have been removed.",
+        "A platelet count of 200,000/μL is within the normal reference range."
+      ]
     },
     {
       "no": 4,
@@ -67,7 +91,15 @@
       "answer": [
         5
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following is NOT a characteristic finding of cardiogenic shock?",
+      "choices_en": [
+        "Tachycardia",
+        "Agitation",
+        "Decreased urine output",
+        "Decreased pulse pressure",
+        "Skin flushing"
+      ]
     },
     {
       "no": 5,
@@ -83,7 +115,15 @@
       "answer": [
         2
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which neurotransmitter is released from the terminals of parasympathetic nerves?",
+      "choices_en": [
+        "Serotonin",
+        "Acetylcholine",
+        "Glutamate",
+        "Noradrenaline",
+        "γ-Aminobutyric acid (GABA)"
+      ]
     },
     {
       "no": 6,
@@ -99,7 +139,15 @@
       "answer": [
         3
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following is correct regarding the process of skeletal muscle contraction?",
+      "choices_en": [
+        "ATP is not required.",
+        "Actin filaments shorten.",
+        "Calcium ions are released from the sarcoplasmic reticulum.",
+        "Contraction occurs without signals from motor nerves.",
+        "The volume of muscle cells decreases."
+      ]
     },
     {
       "no": 7,
@@ -115,7 +163,15 @@
       "answer": [
         2
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which enzyme breaks down fats?",
+      "choices_en": [
+        "Amylase",
+        "Lipase",
+        "Pepsin",
+        "Lactase",
+        "Trypsin"
+      ]
     },
     {
       "no": 8,
@@ -131,7 +187,15 @@
       "answer": [
         3
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following is a posterior pituitary hormone?",
+      "choices_en": [
+        "Growth hormone",
+        "Prolactin",
+        "Vasopressin",
+        "Thyroid-stimulating hormone",
+        "Adrenocorticotropic hormone"
+      ]
     },
     {
       "no": 9,
@@ -147,7 +211,15 @@
       "answer": [
         1
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "For which of the following is there NO vaccine available?",
+      "choices_en": [
+        "Norovirus infection",
+        "Japanese encephalitis",
+        "Polio",
+        "Measles",
+        "Varicella"
+      ]
     },
     {
       "no": 10,
@@ -163,7 +235,15 @@
       "answer": [
         5
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "The table shows the results of a diagnostic test for a certain disease. What is the specificity of this test?\n(Disease present: positive 800, negative 200 / Disease absent: positive 200, negative 1800)",
+      "choices_en": [
+        "10%",
+        "20%",
+        "75%",
+        "80%",
+        "90%"
+      ]
     },
     {
       "no": 11,
@@ -179,7 +259,15 @@
       "answer": [
         4
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "If mass is M, length is L, and time is T, then velocity is expressed as [L·T⁻¹]. Which of the following represents kinetic energy?",
+      "choices_en": [
+        "M·L⁻¹·T⁻²",
+        "M·L·T⁻¹",
+        "M·L·T⁻²",
+        "M·L²·T⁻²",
+        "M·L²·T⁻³"
+      ]
     },
     {
       "no": 12,
@@ -195,7 +283,15 @@
       "answer": [
         2
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which waveform represents the integral of waveform A shown in the figure?",
+      "choices_en": [
+        "Waveform 1)",
+        "Waveform 2)",
+        "Waveform 3)",
+        "Waveform 4)",
+        "Waveform 5)"
+      ]
     },
     {
       "no": 13,
@@ -211,7 +307,15 @@
       "answer": [
         4
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following lists electrical conductivity in descending order?",
+      "choices_en": [
+        "Gold, Silver, Copper",
+        "Gold, Copper, Silver",
+        "Silver, Gold, Copper",
+        "Silver, Copper, Gold",
+        "Copper, Silver, Gold"
+      ]
     },
     {
       "no": 14,
@@ -227,7 +331,15 @@
       "answer": [
         2
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "As shown in the figure, a capacitor series circuit is connected to a power source (20V). What is the capacitance C [μF] of the capacitor connected in series with the 5μF capacitor? (Terminal voltage of 5μF side: 15V)",
+      "choices_en": [
+        "5",
+        "15",
+        "20",
+        "25",
+        "30"
+      ]
     },
     {
       "no": 15,
@@ -243,7 +355,15 @@
       "answer": [
         3
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "If the instantaneous value of a sinusoidal AC voltage is v(t) = 7.2 sin(628t), what is the approximate frequency [Hz]?",
+      "choices_en": [
+        "25",
+        "50",
+        "100",
+        "200",
+        "400"
+      ]
     },
     {
       "no": 16,
@@ -259,7 +379,15 @@
       "answer": [
         3
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "What is the approximate gain [dB] at the cutoff frequency of the filter circuit shown in the figure?",
+      "choices_en": [
+        "0",
+        "−1",
+        "−3",
+        "−10",
+        "−20"
+      ]
     },
     {
       "no": 17,
@@ -275,7 +403,15 @@
       "answer": [
         3
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "What is the current [mA] flowing through the LED in the figure? (Ideal op-amp, 5V supply, 100Ω)",
+      "choices_en": [
+        "0",
+        "5",
+        "50",
+        "500",
+        "5000"
+      ]
     },
     {
       "no": 18,
@@ -291,7 +427,15 @@
       "answer": [
         3
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "What is the approximate resolution of a 10-bit A/D converter with a full scale of 10 Vp-p?",
+      "choices_en": [
+        "0.1 mV",
+        "1 mV",
+        "10 mV",
+        "0.1 V",
+        "1 V"
+      ]
     },
     {
       "no": 19,
@@ -307,7 +451,15 @@
       "answer": [
         4
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "What is 4 times the binary number 10101?",
+      "choices_en": [
+        "101010",
+        "101101",
+        "101111",
+        "1010100",
+        "1110100"
+      ]
     },
     {
       "no": 20,
@@ -323,7 +475,15 @@
       "answer": [
         3
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "When the tip A of the object (with center of gravity at G) is slowly tilted by pushing, after which state does the object begin to fall on its own?",
+      "choices_en": [
+        "State 1)",
+        "State 2)",
+        "State 3)",
+        "State 4)",
+        "State 5)"
+      ]
     },
     {
       "no": 21,
@@ -339,7 +499,15 @@
       "answer": [
         4
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "What is the approximate energy produced per unit time by an adult [W]?",
+      "choices_en": [
+        "0.1",
+        "1",
+        "10",
+        "100",
+        "1000"
+      ]
     },
     {
       "no": 22,
@@ -355,7 +523,15 @@
       "answer": [
         2
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which has the longest wavelength?",
+      "choices_en": [
+        "γ-rays",
+        "Radio waves",
+        "Microwaves",
+        "Infrared rays",
+        "Ultraviolet rays"
+      ]
     },
     {
       "no": 23,
@@ -371,7 +547,15 @@
       "answer": [
         4
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following is NOT measured during sleep in a test for sleep apnea syndrome (SAS)?",
+      "choices_en": [
+        "Respiratory flow",
+        "Snoring sounds",
+        "Arterial oxygen saturation",
+        "Blood pressure",
+        "Electroencephalogram"
+      ]
     },
     {
       "no": 24,
@@ -387,7 +571,15 @@
       "answer": [
         5
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which electrode is used to measure carbon dioxide partial pressure in blood gas analysis?",
+      "choices_en": [
+        "Carbon electrode",
+        "Platinum electrode",
+        "Stainless steel electrode",
+        "Clark electrode",
+        "Severinghaus electrode"
+      ]
     },
     {
       "no": 25,
@@ -403,7 +595,15 @@
       "answer": [
         3
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "The same signal source was measured 4 times repeatedly and averaging was performed. Which is the correct waveform?",
+      "choices_en": [
+        "Waveform 1)",
+        "Waveform 2)",
+        "Waveform 3)",
+        "Waveform 4)",
+        "Waveform 5)"
+      ]
     },
     {
       "no": 26,
@@ -419,7 +619,15 @@
       "answer": [
         1
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which laser used in laser therapy devices uses water in living tissue as the primary light absorber?",
+      "choices_en": [
+        "Er:YAG laser (wavelength 2940 nm)",
+        "Alexandrite laser (wavelength 755 nm)",
+        "ArF excimer laser (wavelength 193 nm)",
+        "Semiconductor laser (wavelength 830 nm)",
+        "Dye laser (wavelength 595 nm)"
+      ]
     },
     {
       "no": 27,
@@ -435,7 +643,15 @@
       "answer": [
         3
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following correctly describes diffusion across a membrane in hemodialysis?",
+      "choices_en": [
+        "Solutes move due to osmotic pressure difference.",
+        "Solvent moves due to osmotic pressure difference.",
+        "Solutes move due to concentration difference.",
+        "Solvent moves due to concentration difference.",
+        "Solutes are adsorbed by affinity."
+      ]
     },
     {
       "no": 28,
@@ -451,7 +667,15 @@
       "answer": [
         5
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which therapeutic device passes electric current through the body?",
+      "choices_en": [
+        "Gamma knife",
+        "HIFU device (high-intensity focused ultrasound)",
+        "Extracorporeal shock wave lithotripter",
+        "Laser therapy device",
+        "Radiofrequency ablation device"
+      ]
     },
     {
       "no": 29,
@@ -467,7 +691,15 @@
       "answer": [
         1
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "The figure shows the equivalent electrical circuit of the cellular portion of biological tissue. Which relationship between the membrane resistance R1, capacitance C1, intracellular fluid resistance R2, and capacitance C2 is correct?",
+      "choices_en": [
+        "C1>C2, R1>R2",
+        "C1>C2, R1<R2",
+        "C1<C2, R1>R2",
+        "C1<C2, R1<R2",
+        "C1=C2, R1<R2"
+      ]
     },
     {
       "no": 30,
@@ -483,7 +715,15 @@
       "answer": [
         3
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following qualifies as a Software as a Medical Device (SaMD)?",
+      "choices_en": [
+        "Software that notifies maintenance timing for each medical device in the hospital.",
+        "Software that displays infusion progress and error status on an infusion pump panel.",
+        "Software that plans peritoneal dialysis prescriptions and treatment schedules based on test data.",
+        "Software that searches a medical encyclopedia and presents a list of disease name candidates when symptoms are entered.",
+        "Software that allows patients to record data from medical devices and view it as graphs."
+      ]
     },
     {
       "no": 31,
@@ -499,7 +739,15 @@
       "answer": [
         3
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following correctly describes the relationship of bipolar limb leads (Leads I, II, III) in ECG?",
+      "choices_en": [
+        "I = II + III",
+        "I = (II + III) / 2",
+        "II = I + III",
+        "II = (I − III) / 2",
+        "III = I + II"
+      ]
     },
     {
       "no": 32,
@@ -515,7 +763,15 @@
       "answer": [
         4
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "What does a pulse oximeter measure?",
+      "choices_en": [
+        "Hematocrit",
+        "Inspired oxygen concentration",
+        "Venous oxygen partial pressure",
+        "Arterial oxygen saturation",
+        "Amount of oxygenated hemoglobin"
+      ]
     },
     {
       "no": 33,
@@ -531,7 +787,15 @@
       "answer": [
         1
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "What is the purpose of IVUS (intravascular ultrasound) in percutaneous coronary intervention?",
+      "choices_en": [
+        "Observation of cross-sectional images of blood vessels",
+        "Cutting of calcified lesions",
+        "Dilation of stenotic sites",
+        "Aspiration of thrombus",
+        "Hemostasis"
+      ]
     },
     {
       "no": 34,
@@ -547,7 +811,15 @@
       "answer": [
         2
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "What does a PET scanner detect?",
+      "choices_en": [
+        "X-rays",
+        "γ-rays",
+        "Magnetic field",
+        "Infrared rays",
+        "Proton beams"
+      ]
     },
     {
       "no": 35,
@@ -563,7 +835,15 @@
       "answer": [
         1
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following is correct regarding an external pacemaker?",
+      "choices_en": [
+        "The catheter electrode connector is touch-proof type.",
+        "The catheter electrode is unipolar.",
+        "The device housing is made of metal.",
+        "The battery cannot be replaced.",
+        "Pacing output is adjusted with a programmer."
+      ]
     },
     {
       "no": 36,
@@ -579,7 +859,15 @@
       "answer": [
         3
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following is correct regarding an ArF excimer laser treatment device?",
+      "choices_en": [
+        "A guide light is not needed.",
+        "Light is guided through quartz fiber.",
+        "The laser medium is a gas.",
+        "The penetration depth of the laser is several millimeters.",
+        "Eye protection for the operator is not needed."
+      ]
     },
     {
       "no": 37,
@@ -595,7 +883,15 @@
       "answer": [
         1
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "What is used to detect air bubbles in the blood circuit of a hemodialysis machine?",
+      "choices_en": [
+        "Ultrasound",
+        "Visible light",
+        "X-rays",
+        "Microwaves",
+        "High-frequency current"
+      ]
     },
     {
       "no": 38,
@@ -611,7 +907,15 @@
       "answer": [
         5
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following is NOT a component of a cardiopulmonary bypass system?",
+      "choices_en": [
+        "Roller pump",
+        "Heat exchanger",
+        "Oxygen blender",
+        "Reservoir",
+        "Blood leak detector"
+      ]
     },
     {
       "no": 39,
@@ -627,7 +931,15 @@
       "answer": [
         2
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "What is the main effect when the IABP balloon inflates?",
+      "choices_en": [
+        "Reduction of cardiac afterload",
+        "Increase in coronary artery blood flow",
+        "Decrease in aortic pressure during diastole",
+        "Increase in central venous pressure",
+        "Decrease in peripheral vascular resistance"
+      ]
     },
     {
       "no": 40,
@@ -643,7 +955,15 @@
       "answer": [
         5
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which medical gas pipeline is NOT connected to an anesthesia machine?",
+      "choices_en": [
+        "Oxygen",
+        "Nitrous oxide",
+        "Medical air",
+        "Anesthetic gas scavenging",
+        "Carbon dioxide"
+      ]
     },
     {
       "no": 41,
@@ -659,7 +979,15 @@
       "answer": [
         4
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "What differs when measuring blood pressure in infants using the auscultatory method compared to adults?",
+      "choices_en": [
+        "Apply higher pressure.",
+        "Deflate at a faster rate.",
+        "Place the stethoscope near the radial artery.",
+        "Use a smaller cuff.",
+        "Wrap the cuff tightly."
+      ]
     },
     {
       "no": 42,
@@ -675,7 +1003,15 @@
       "answer": [
         2
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following is correct regarding cardiac output measurement by the thermodilution method (bolus method)?",
+      "choices_en": [
+        "The catheter tip is placed in the right ventricle.",
+        "The indicator is injected near the right atrium.",
+        "The indicator should be injected as slowly as possible.",
+        "Temperature is measured inside the right ventricle.",
+        "Repeated measurements cannot be performed."
+      ]
     },
     {
       "no": 43,
@@ -691,7 +1027,15 @@
       "answer": [
         4
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following is INCORRECT regarding EEG measurement?",
+      "choices_en": [
+        "Disc electrodes are used.",
+        "The 10/20 system is used for electrode placement.",
+        "Recording is done at a paper speed of 30 mm/s.",
+        "In monopolar derivation, the forehead is used as the reference.",
+        "Contact impedance between electrodes and the body is measured before recording."
+      ]
     },
     {
       "no": 44,
@@ -707,7 +1051,15 @@
       "answer": [
         5
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which examination requires administration of a radiopharmaceutical?",
+      "choices_en": [
+        "Barium enema",
+        "X-ray fluoroscopy",
+        "X-ray CT",
+        "MRI",
+        "SPECT"
+      ]
     },
     {
       "no": 45,
@@ -723,7 +1075,15 @@
       "answer": [
         1
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following CANNOT be automatically detected by a peristaltic infusion pump?",
+      "choices_en": [
+        "Needle dislodgement",
+        "Forgetting to start infusion",
+        "Occlusion of the infusion circuit",
+        "Air bubbles in the infusion circuit",
+        "Low battery voltage"
+      ]
     },
     {
       "no": 46,
@@ -739,7 +1099,15 @@
       "answer": [
         4
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which blood purification therapy requires a replacement fluid?",
+      "choices_en": [
+        "Hemodialysis",
+        "Hemoadsorption",
+        "Plasma adsorption",
+        "Plasma exchange",
+        "Leukocyte removal"
+      ]
     },
     {
       "no": 47,
@@ -755,7 +1123,15 @@
       "answer": [
         5
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "During mechanical ventilation, arterial carbon dioxide partial pressure (PaCO2) decreased. What is the likely cause?",
+      "choices_en": [
+        "Decreased pulmonary compliance",
+        "Shortened inspiratory time",
+        "Cuff leak of the endotracheal tube",
+        "Increased dead space",
+        "Increased minute ventilation"
+      ]
     },
     {
       "no": 48,
@@ -771,7 +1147,15 @@
       "answer": [
         1
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which measurement parameter represents the balance between oxygen supply and demand during complete cardiopulmonary bypass?",
+      "choices_en": [
+        "Mixed venous oxygen saturation (S-vO2)",
+        "Arterial carbon dioxide partial pressure (PaCO2)",
+        "Mean arterial pressure (MAP)",
+        "Central venous pressure (CVP)",
+        "Arterial pH"
+      ]
     },
     {
       "no": 49,
@@ -787,7 +1171,15 @@
       "answer": [
         4
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following is appropriate when defibrillating with a manual defibrillator?",
+      "choices_en": [
+        "Ultrasound gel was applied to the defibrillation electrodes.",
+        "The R-wave synchronization switch was turned ON when removing ventricular fibrillation.",
+        "An assistant held the patient down to prevent movement.",
+        "Oxygen inhalation was temporarily suspended during shock delivery.",
+        "Shock was delivered through a medicated patch."
+      ]
     },
     {
       "no": 50,
@@ -803,7 +1195,15 @@
       "answer": [
         2
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which component of an anesthesia machine prevents excessive pressure buildup in the breathing circuit?",
+      "choices_en": [
+        "CO2 absorber",
+        "APL (adjustable pressure limiting) valve",
+        "Vaporizer",
+        "Breathing bag",
+        "Oxygen flush valve"
+      ]
     },
     {
       "no": 51,
@@ -819,7 +1219,15 @@
       "answer": [
         2
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "During routine inspection of an electrosurgical unit, output was measured in coagulation mode with a non-inductive load resistance of 500Ω. The maximum voltage was 900V and the current (RMS) was 120mA. What is the approximate crest factor (peak voltage / RMS voltage)?",
+      "choices_en": [
+        "0",
+        "15",
+        "30",
+        "45",
+        "60"
+      ]
     },
     {
       "no": 52,
@@ -835,7 +1243,15 @@
       "answer": [
         1
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following is NOT a daily inspection item for an AED in a hospital?",
+      "choices_en": [
+        "Charging time for defibrillation energy",
+        "Expiration date of electrode pads",
+        "Spare electrode pads",
+        "Battery level",
+        "External damage"
+      ]
     },
     {
       "no": 53,
@@ -851,7 +1267,15 @@
       "answer": [
         5
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "What causes interference in a specified low-power medical telemetry system?",
+      "choices_en": [
+        "The booster malfunctioned.",
+        "The transmitter battery ran out.",
+        "The distance between the transmitter and receiving antenna is large.",
+        "The channel set on the receiver differs from that of the transmitter.",
+        "Multiple transmitters were set to the same channel."
+      ]
     },
     {
       "no": 54,
@@ -867,7 +1291,15 @@
       "answer": [
         2
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which of the following statements about high-pressure gas cylinders used in oxygen therapy is INCORRECT?",
+      "choices_en": [
+        "The surface is labeled 'Medical Oxygen'.",
+        "The surface color is green.",
+        "The gas filled is a pharmaceutical.",
+        "The remaining gas can be calculated from the internal pressure.",
+        "Periodic pressure tests are mandatory."
+      ]
     },
     {
       "no": 55,
@@ -883,7 +1315,15 @@
       "answer": [
         4
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "During invasive blood pressure monitoring, the waveform changed to a dampened waveform. What is the cause?",
+      "choices_en": [
+        "A large air bubble entered the catheter.",
+        "Blood coagulation at the catheter tip.",
+        "The catheter tip is abutting the vessel wall.",
+        "Resonance occurring in the catheter.",
+        "The catheter is kinked."
+      ]
     },
     {
       "no": 56,
@@ -899,7 +1339,15 @@
       "answer": [
         4
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "In the classification of medical electrical equipment by class in JIS T 0601-1, which protective measure is required for ALL classes?",
+      "choices_en": [
+        "Protective earth",
+        "Supplementary insulation",
+        "Internal power source",
+        "Basic insulation",
+        "Reinforced insulation"
+      ]
     },
     {
       "no": 57,
@@ -915,7 +1363,15 @@
       "answer": [
         5
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "According to JIS T 1022, what is the minimum number of hours of continuous operation required for emergency generators?",
+      "choices_en": [
+        "1",
+        "2",
+        "6",
+        "8",
+        "10"
+      ]
     },
     {
       "no": 58,
@@ -931,7 +1387,15 @@
       "answer": [
         1
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "According to JIS T 1022, which medical room must be equipped with an isolated power supply system?",
+      "choices_en": [
+        "Operating room",
+        "Neonatal room",
+        "Endoscopy room",
+        "Emergency treatment room",
+        "Hemodialysis room"
+      ]
     },
     {
       "no": 59,
@@ -947,7 +1411,15 @@
       "answer": [
         4
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Three components each with a reliability of 0.70 are connected in parallel as shown in the figure. What is the approximate overall system reliability?",
+      "choices_en": [
+        "0.34",
+        "0.70",
+        "0.91",
+        "0.97",
+        "2.10"
+      ]
     },
     {
       "no": 60,
@@ -963,7 +1435,15 @@
       "answer": [
         1
       ],
-      "select": 1
+      "select": 1,
+      "text_en": "Which figure shows the pin hole arrangement for the oxygen pipeline terminal unit specified in JIS T 7101?",
+      "choices_en": [
+        "Arrangement 1)",
+        "Arrangement 2)",
+        "Arrangement 3)",
+        "Arrangement 4)",
+        "Arrangement 5)"
+      ]
     }
   ]
 }
