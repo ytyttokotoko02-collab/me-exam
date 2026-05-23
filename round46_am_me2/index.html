@@ -331,6 +331,18 @@ function setLang(l) {
   document.getElementById('btnJa').classList.toggle('active', l==='ja');
   document.getElementById('btnEn').classList.toggle('active', l==='en');
   document.documentElement.lang = l==='ja' ? 'ja' : 'en';
+
+  // 起動画面が表示中なら再描画
+  if (document.getElementById('inputName')) {
+    const savedName = document.getElementById('inputName').value;
+    const savedId   = document.getElementById('inputId').value;
+    showStartScreen();
+    document.getElementById('inputName').value = savedName;
+    document.getElementById('inputId').value   = savedId;
+    checkStartBtn();
+    return;
+  }
+
   // サイドバーの静的テキストを更新
   const ids = { 'sb-heading':'sbHeading','sb-correct':'sbCorrect','sb-wrong':'sbWrong',
                 'sb-unscored':'sbUnscored','sb-btn-result':'sbBtnResult','sb-btn-reset':'sbBtnReset' };
@@ -338,9 +350,16 @@ function setLang(l) {
     const el = document.getElementById(id);
     if (el) el.textContent = t(key);
   });
+
   // 問題表示中なら再描画
   if (questions.length > 0 && document.getElementById('quizArea')) {
     renderQ(currentIdx);
+  }
+
+  // 結果画面が表示中なら再描画
+  if (document.getElementById('resultScreen') &&
+      document.getElementById('resultScreen').style.display === 'block') {
+    showResult();
   }
 }
 
