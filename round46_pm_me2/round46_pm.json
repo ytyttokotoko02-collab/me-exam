@@ -1,0 +1,1450 @@
+{
+  "exam": {
+    "round": 46,
+    "session": "午後",
+    "total": 60
+  },
+  "questions": [
+    {
+      "no": 1,
+      "text": "動脈血で基準値の範囲外はどれか。",
+      "image": null,
+      "choices": [
+        "pH ：7.4",
+        "PaO2 ：98 mmHg",
+        "PaCO2 ：55 mmHg",
+        "Lactate（乳酸）：1.5 mmol／L",
+        "Ca²＋ ：1.2 mmol／L"
+      ],
+      "answer": [
+        3
+      ],
+      "select": 1,
+      "text_en": "Which of the following arterial blood values is outside the normal reference range?",
+      "choices_en": [
+        "pH: 7.4",
+        "PaO2: 98 mmHg",
+        "PaCO2: 55 mmHg",
+        "Lactate: 1.5 mmol/L",
+        "Ca²⁺: 1.2 mmol/L"
+      ]
+    },
+    {
+      "no": 2,
+      "text": "健常成人の血流で誤っているのはどれか。",
+      "image": null,
+      "choices": [
+        "安静時、1 回心拍出量は約 70 mL である。",
+        "安静時、脳には心拍出量の約 15% が流入する。",
+        "安静時、冠動脈には心拍出量の約 5% が流入する。",
+        "激しい運動時、心拍出量は 10 倍以上に増加する。",
+        "運動時の血流増加率は骨格筋が肝臓よりも大きい。"
+      ],
+      "answer": [
+        4
+      ],
+      "select": 1,
+      "text_en": "Which of the following statements about blood flow in healthy adults is INCORRECT?",
+      "choices_en": [
+        "At rest, stroke volume is approximately 70 mL.",
+        "At rest, approximately 15% of cardiac output flows to the brain.",
+        "At rest, approximately 5% of cardiac output flows to the coronary arteries.",
+        "During intense exercise, cardiac output increases more than 10-fold.",
+        "During exercise, the rate of blood flow increase is greater in skeletal muscle than in the liver."
+      ]
+    },
+    {
+      "no": 3,
+      "text": "胎児の循環系で酸素飽和度の最も低い血液が流れているのはどれか。",
+      "image": null,
+      "choices": [
+        "臍動脈",
+        "臍静脈",
+        "肺動脈",
+        "肺静脈",
+        "ボタロー管"
+      ],
+      "answer": [
+        1
+      ],
+      "select": 1,
+      "text_en": "In the fetal circulatory system, which vessel carries blood with the lowest oxygen saturation?",
+      "choices_en": [
+        "Umbilical artery",
+        "Umbilical vein",
+        "Pulmonary artery",
+        "Pulmonary vein",
+        "Ductus arteriosus (Botallo's duct)"
+      ]
+    },
+    {
+      "no": 4,
+      "text": "肝臓の機能で誤っているのはどれか。",
+      "image": null,
+      "choices": [
+        "グリコーゲンを貯蔵する。",
+        "胆汁を産生する。",
+        "インスリンを分泌する。",
+        "アンモニアを分解する。",
+        "脂質を合成する。"
+      ],
+      "answer": [
+        3
+      ],
+      "select": 1,
+      "text_en": "Which of the following statements about liver function is INCORRECT?",
+      "choices_en": [
+        "It stores glycogen.",
+        "It produces bile.",
+        "It secretes insulin.",
+        "It breaks down ammonia.",
+        "It synthesizes lipids."
+      ]
+    },
+    {
+      "no": 5,
+      "text": "神経細胞の活動電位で誤っているのはどれか。",
+      "image": null,
+      "choices": [
+        "活動電位は「全か無かの法則」に従う。",
+        "閾値以上の刺激が加わると活動電位が発生する。",
+        "ナトリウムイオンが細胞外へ流出して脱分極が発生する。",
+        "活動電位発生の直後に不応期が存在する。",
+        "カリウムイオンが細胞外へ流出して再分極が発生する。"
+      ],
+      "answer": [
+        3
+      ],
+      "select": 1,
+      "text_en": "Which of the following statements about action potentials in nerve cells is INCORRECT?",
+      "choices_en": [
+        "Action potentials follow the all-or-none law.",
+        "An action potential is generated when a stimulus exceeds the threshold.",
+        "Sodium ions flow out of the cell, causing depolarization.",
+        "A refractory period exists immediately after the action potential.",
+        "Potassium ions flow out of the cell, causing repolarization."
+      ]
+    },
+    {
+      "no": 6,
+      "text": "視覚経路にないのはどれか。",
+      "image": null,
+      "choices": [
+        "視細胞",
+        "視神経",
+        "視交叉",
+        "視床下部",
+        "一次視覚野"
+      ],
+      "answer": [
+        4
+      ],
+      "select": 1,
+      "text_en": "Which of the following is NOT part of the visual pathway?",
+      "choices_en": [
+        "Photoreceptor cells",
+        "Optic nerve",
+        "Optic chiasm",
+        "Hypothalamus",
+        "Primary visual cortex"
+      ]
+    },
+    {
+      "no": 7,
+      "text": "膵液が流入する部位はどれか。",
+      "image": null,
+      "choices": [
+        "胃",
+        "十二指腸",
+        "盲腸",
+        "結腸",
+        "直腸"
+      ],
+      "answer": [
+        2
+      ],
+      "select": 1,
+      "text_en": "Where does pancreatic juice flow into?",
+      "choices_en": [
+        "Stomach",
+        "Duodenum",
+        "Cecum",
+        "Colon",
+        "Rectum"
+      ]
+    },
+    {
+      "no": 8,
+      "text": "老化に伴う身体的変化はどれか。",
+      "image": null,
+      "choices": [
+        "骨密度が増加する。",
+        "糸球体濾過量が増加する。",
+        "高音域に比べ低音域の聴力が低下する。",
+        "基礎代謝量が増加する。",
+        "唾液分泌量が減少する。"
+      ],
+      "answer": [
+        5
+      ],
+      "select": 1,
+      "text_en": "Which of the following is a physical change associated with aging?",
+      "choices_en": [
+        "Bone density increases.",
+        "Glomerular filtration rate increases.",
+        "Hearing loss occurs more in low frequencies than high frequencies.",
+        "Basal metabolic rate increases.",
+        "Saliva secretion decreases."
+      ]
+    },
+    {
+      "no": 9,
+      "text": "自然免疫を担う主な細胞はどれか。",
+      "image": null,
+      "choices": [
+        "キラーT細胞",
+        "形質細胞",
+        "マクロファージ",
+        "B細胞",
+        "ヘルパーT細胞"
+      ],
+      "answer": [
+        3
+      ],
+      "select": 1,
+      "text_en": "Which cell type is primarily responsible for innate immunity?",
+      "choices_en": [
+        "Killer T cells",
+        "Plasma cells",
+        "Macrophages",
+        "B cells",
+        "Helper T cells"
+      ]
+    },
+    {
+      "no": 10,
+      "text": "公衆衛生における一次予防に該当するのはどれか。",
+      "image": null,
+      "choices": [
+        "がん検診の実施",
+        "高血圧の薬物治療",
+        "予防接種の実施",
+        "脳卒中のリハビリテーション",
+        "生活習慣病患者の合併症管理"
+      ],
+      "answer": [
+        3
+      ],
+      "select": 1,
+      "text_en": "Which of the following corresponds to primary prevention in public health?",
+      "choices_en": [
+        "Cancer screening",
+        "Drug treatment for hypertension",
+        "Vaccination",
+        "Rehabilitation after stroke",
+        "Management of complications in lifestyle disease patients"
+      ]
+    },
+    {
+      "no": 11,
+      "text": "静止している観測者に向かって音源がf［Hz］の音を出しながらv［m/s］の速さで近づくとき、観測者が聞く音の周波数はfの何倍か。ただし、音速をc［m/s］とする。",
+      "image": "46_pm_q11.png",
+      "choices": [
+        "c／(c－v)",
+        "(c－v)／(c＋v)",
+        "(c＋v)／(c－v)",
+        "1＋c／v",
+        "1＋v／c"
+      ],
+      "answer": [
+        1
+      ],
+      "select": 1,
+      "text_en": "When a sound source emitting sound at f [Hz] approaches a stationary observer at velocity v [m/s], what is the frequency heard by the observer as a multiple of f? (Speed of sound: c [m/s])",
+      "choices_en": [
+        "c/(c−v)",
+        "(c−v)/(c+v)",
+        "(c+v)/(c−v)",
+        "1+c/v",
+        "1+v/c"
+      ]
+    },
+    {
+      "no": 12,
+      "text": "水に溶けにくいのはどれか。",
+      "image": null,
+      "choices": [
+        "酢酸",
+        "アンモニア",
+        "硫酸バリウム",
+        "塩化カルシウム",
+        "塩化ナトリウム"
+      ],
+      "answer": [
+        3
+      ],
+      "select": 1,
+      "text_en": "Which of the following is poorly soluble in water?",
+      "choices_en": [
+        "Acetic acid",
+        "Ammonia",
+        "Barium sulfate",
+        "Calcium chloride",
+        "Sodium chloride"
+      ]
+    },
+    {
+      "no": 13,
+      "text": "図の各抵抗器はすべて3Ωである。AB間の合成抵抗は何Ωか。",
+      "image": "46_pm_q13.png",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "answer": [
+        2
+      ],
+      "select": 1,
+      "text_en": "All resistors in the figure are 3Ω each. What is the combined resistance between A and B [Ω]?",
+      "choices_en": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6"
+      ]
+    },
+    {
+      "no": 14,
+      "text": "電池の内部抵抗rを測定するために図1の回路の負荷抵抗Rを変化させたところ、端子電圧Vと電流Iの関係が図2のようになった。r［Ω］はおよそいくらか。",
+      "image": "46_pm_q14.png",
+      "choices": [
+        "0.17",
+        "0.25",
+        "1.7",
+        "2.3",
+        "3.7"
+      ],
+      "answer": [
+        1
+      ],
+      "select": 1,
+      "text_en": "To measure the internal resistance r of a battery, the load resistance R in the circuit (Figure 1) was varied, and the relationship between terminal voltage V and current I was as shown in Figure 2. What is the approximate value of r [Ω]?",
+      "choices_en": [
+        "0.17",
+        "0.25",
+        "1.7",
+        "2.3",
+        "3.7"
+      ]
+    },
+    {
+      "no": 15,
+      "text": "図のスイッチSを閉じてから20ms後のキャパシタ両端電圧Vc［V］に最も近いのはどれか。ただし、スイッチを閉じる前はキャパシタに電荷は蓄えられておらず、自然対数の底は2.7とする。",
+      "image": "46_pm_q15.png",
+      "choices": [
+        "0.37",
+        "0.63",
+        "3.7",
+        "6.3",
+        "10"
+      ],
+      "answer": [
+        4
+      ],
+      "select": 1,
+      "text_en": "What is the capacitor voltage Vc [V] closest to 20 ms after switch S is closed in the figure? Assume no charge is stored before closing, and the base of natural logarithm is 2.7.",
+      "choices_en": [
+        "0.37",
+        "0.63",
+        "3.7",
+        "6.3",
+        "10"
+      ]
+    },
+    {
+      "no": 16,
+      "text": "図1の搬送波を図2のように変調するのはどれか。",
+      "image": "46_pm_q16.png",
+      "choices": [
+        "AM（amplitude modulation）",
+        "FM（frequency modulation）",
+        "PAM（pulse-amplitude modulation）",
+        "PWM（pulse-width modulation）",
+        "PCM（pulse-code modulation）"
+      ],
+      "answer": [
+        2
+      ],
+      "select": 1,
+      "text_en": "Which modulation method transforms the carrier wave in Figure 1 into the modulated wave in Figure 2?",
+      "choices_en": [
+        "AM (amplitude modulation)",
+        "FM (frequency modulation)",
+        "PAM (pulse-amplitude modulation)",
+        "PWM (pulse-width modulation)",
+        "PCM (pulse-code modulation)"
+      ]
+    },
+    {
+      "no": 17,
+      "text": "ある信号を増幅器A（利得60dB）で増幅したところ振幅が10Vとなった。同じ信号を増幅器Bで増幅したところ振幅が1Vとなった。増幅器Bの利得［dB］はどれか。",
+      "image": null,
+      "choices": [
+        "6",
+        "20",
+        "30",
+        "40",
+        "70"
+      ],
+      "answer": [
+        4
+      ],
+      "select": 1,
+      "text_en": "A signal amplified by amplifier A (gain 60 dB) produced an amplitude of 10 V. The same signal amplified by amplifier B produced an amplitude of 1 V. What is the gain [dB] of amplifier B?",
+      "choices_en": [
+        "6",
+        "20",
+        "30",
+        "40",
+        "70"
+      ]
+    },
+    {
+      "no": 18,
+      "text": "8ビットで表現可能なパターンは全部で何通りか。",
+      "image": null,
+      "choices": [
+        "2",
+        "8",
+        "64",
+        "128",
+        "256"
+      ],
+      "answer": [
+        5
+      ],
+      "select": 1,
+      "text_en": "How many patterns can be represented by 8 bits in total?",
+      "choices_en": [
+        "2",
+        "8",
+        "64",
+        "128",
+        "256"
+      ]
+    },
+    {
+      "no": 19,
+      "text": "コンピュータの補助記憶装置で誤っているのはどれか。",
+      "image": null,
+      "choices": [
+        "電源を切ってもデータを保持できる。",
+        "USBフラッシュメモリは揮発性メモリである。",
+        "SSDはハードディスクよりも物理的な衝撃に強い。",
+        "主記憶装置（RAM）よりもアクセス速度が遅い。",
+        "DVDは補助記憶装置として利用される。"
+      ],
+      "answer": [
+        2
+      ],
+      "select": 1,
+      "text_en": "Which of the following statements about computer auxiliary storage devices is INCORRECT?",
+      "choices_en": [
+        "Data is retained even when the power is turned off.",
+        "USB flash memory is a volatile memory.",
+        "SSDs are more resistant to physical impact than hard disks.",
+        "Access speed is slower than main memory (RAM).",
+        "DVDs can be used as auxiliary storage devices."
+      ]
+    },
+    {
+      "no": 20,
+      "text": "図のように、はかりの上に水を入れた箱を置き、天井から吊り下げた球を箱に触れないように水中に完全に沈めた。このとき、はかりが示す値として適切なのはどれか。",
+      "image": "46_pm_q20.png",
+      "choices": [
+        "箱と水の重さ",
+        "箱と水の重さ＋球に働く浮力の大きさ",
+        "箱と水の重さ＋球に働く浮力の大きさ＋球の重さ",
+        "箱と水の重さ－球に働く浮力の大きさ＋球の重さ",
+        "箱と水の重さ－球に働く浮力の大きさ－球の重さ"
+      ],
+      "answer": [
+        2
+      ],
+      "select": 1,
+      "text_en": "As shown in the figure, a box filled with water is placed on a scale, and a ball suspended from the ceiling is fully submerged in the water without touching the box. What value does the scale show?",
+      "choices_en": [
+        "Weight of box and water",
+        "Weight of box and water + buoyant force on ball",
+        "Weight of box and water + buoyant force on ball + weight of ball",
+        "Weight of box and water − buoyant force on ball + weight of ball",
+        "Weight of box and water − buoyant force on ball − weight of ball"
+      ]
+    },
+    {
+      "no": 21,
+      "text": "振動を発生するのに使われる素子はどれか。",
+      "image": null,
+      "choices": [
+        "CdSセル",
+        "磁気抵抗素子",
+        "ストレインゲージ",
+        "ホール素子",
+        "ピエゾ素子"
+      ],
+      "answer": [
+        5
+      ],
+      "select": 1,
+      "text_en": "Which element is used to generate vibration?",
+      "choices_en": [
+        "CdS cell",
+        "Magnetoresistive element",
+        "Strain gauge",
+        "Hall element",
+        "Piezoelectric element"
+      ]
+    },
+    {
+      "no": 22,
+      "text": "放射線滅菌に用いられるコバルト60が放出するのはどれか。",
+      "image": null,
+      "choices": [
+        "γ線",
+        "α線",
+        "X線",
+        "陽子線",
+        "中性子線"
+      ],
+      "answer": [
+        1
+      ],
+      "select": 1,
+      "text_en": "What does cobalt-60, used in radiation sterilization, emit?",
+      "choices_en": [
+        "γ-rays",
+        "α-rays",
+        "X-rays",
+        "Proton beams",
+        "Neutron beams"
+      ]
+    },
+    {
+      "no": 23,
+      "text": "ステンレス鋼に比べたセラミックスの特徴で誤っているのはどれか。",
+      "image": null,
+      "choices": [
+        "ヤング率が大きい。",
+        "摩耗に強い。",
+        "融点が低い。",
+        "電気伝導度が低い。",
+        "衝撃にもろい。"
+      ],
+      "answer": [
+        3
+      ],
+      "select": 1,
+      "text_en": "Which of the following characteristics of ceramics compared to stainless steel is INCORRECT?",
+      "choices_en": [
+        "Higher Young's modulus.",
+        "More wear-resistant.",
+        "Lower melting point.",
+        "Lower electrical conductivity.",
+        "More brittle under impact."
+      ]
+    },
+    {
+      "no": 24,
+      "text": "観血式血圧計でカテーテルと圧力トランスデューサを図のように配置した場合、もっとも大きな値を示す配置はどれか。ただし、どの配置でもカテーテル先端部は同じ位置にあり、図の上方向を鉛直上向きとする。",
+      "image": "46_pm_q24.png",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "どの配置でも同じ"
+      ],
+      "answer": [
+        4
+      ],
+      "select": 1,
+      "text_en": "When a catheter and pressure transducer are positioned as shown in the figure for invasive blood pressure measurement, which arrangement shows the largest value? (Catheter tip position is the same in all arrangements; upward in the figure is vertically upward.)",
+      "choices_en": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "Same for all arrangements"
+      ]
+    },
+    {
+      "no": 25,
+      "text": "ある金属板にX線を照射すると、透過するX線量は照射量の0.1倍になる。この板を3枚重ねたものにX線を照射すると、透過するX線量は照射量のおよそ何倍か。",
+      "image": null,
+      "choices": [
+        "0.3",
+        "0.1",
+        "0.03",
+        "0.001",
+        "0.0003"
+      ],
+      "answer": [
+        4
+      ],
+      "select": 1,
+      "text_en": "When a metal plate is irradiated with X-rays, the transmitted dose is 0.1 times the incident dose. When 3 such plates are stacked and irradiated, what is the approximate ratio of transmitted to incident dose?",
+      "choices_en": [
+        "0.3",
+        "0.1",
+        "0.03",
+        "0.001",
+        "0.0003"
+      ]
+    },
+    {
+      "no": 26,
+      "text": "生体計測用体表面電極で誤っているのはどれか。",
+      "image": null,
+      "choices": [
+        "分極電位が小さいほど電極と体表との電位差が小さい。",
+        "接触インピーダンスが小さいほどノイズの混入が少ない。",
+        "電極面積が大きいほど接触インピーダンスが小さい。",
+        "周波数が高いほど接触インピーダンスが大きい。",
+        "入力インピーダンスが小さいほど分極電位が大きい。"
+      ],
+      "answer": [
+        4
+      ],
+      "select": 1,
+      "text_en": "Which of the following statements about body surface electrodes for biopotential measurement is INCORRECT?",
+      "choices_en": [
+        "The smaller the polarization potential, the smaller the potential difference between electrode and skin.",
+        "The smaller the contact impedance, the less noise interference.",
+        "The larger the electrode area, the smaller the contact impedance.",
+        "The higher the frequency, the larger the contact impedance.",
+        "The smaller the input impedance, the larger the polarization potential."
+      ]
+    },
+    {
+      "no": 27,
+      "text": "生体電気計測用電極の分極電圧を小さくする目的で使用される材料はどれか。",
+      "image": null,
+      "choices": [
+        "ステンレス鋼",
+        "金",
+        "銀－塩化銀",
+        "亜鉛",
+        "白金"
+      ],
+      "answer": [
+        3
+      ],
+      "select": 1,
+      "text_en": "Which material is used to minimize polarization voltage in electrodes for bioelectrical measurement?",
+      "choices_en": [
+        "Stainless steel",
+        "Gold",
+        "Silver-silver chloride",
+        "Zinc",
+        "Platinum"
+      ]
+    },
+    {
+      "no": 28,
+      "text": "僧帽弁置換術に用いられる機械弁に使われている材料はどれか。",
+      "image": null,
+      "choices": [
+        "ニッケル",
+        "結晶化ガラス",
+        "リン酸三カルシウム",
+        "パイロライトカーボン",
+        "ハイドロキシアパタイト"
+      ],
+      "answer": [
+        4
+      ],
+      "select": 1,
+      "text_en": "Which material is used in the mechanical valve for mitral valve replacement?",
+      "choices_en": [
+        "Nickel",
+        "Crystallized glass",
+        "Tricalcium phosphate",
+        "Pyrolytic carbon",
+        "Hydroxyapatite"
+      ]
+    },
+    {
+      "no": 29,
+      "text": "インプラント埋植時に起こりうる急性反応はどれか。",
+      "image": null,
+      "choices": [
+        "血管増生",
+        "炎症",
+        "石灰化",
+        "カプセル化",
+        "肉芽形成"
+      ],
+      "answer": [
+        2
+      ],
+      "select": 1,
+      "text_en": "Which of the following is an acute reaction that can occur when an implant is placed?",
+      "choices_en": [
+        "Neovascularization",
+        "Inflammation",
+        "Calcification",
+        "Encapsulation",
+        "Granulation"
+      ]
+    },
+    {
+      "no": 30,
+      "text": "エアレーションが必要な滅菌法はどれか。",
+      "image": null,
+      "choices": [
+        "EOG滅菌",
+        "γ線滅菌",
+        "乾熱滅菌",
+        "高圧蒸気滅菌",
+        "過酸化水素低温ガスプラズマ滅菌"
+      ],
+      "answer": [
+        1
+      ],
+      "select": 1,
+      "text_en": "Which sterilization method requires aeration?",
+      "choices_en": [
+        "EOG sterilization",
+        "γ-ray sterilization",
+        "Dry heat sterilization",
+        "High-pressure steam sterilization",
+        "Hydrogen peroxide low-temperature gas plasma sterilization"
+      ]
+    },
+    {
+      "no": 31,
+      "text": "心電計の低域周波数特性を表すパラメータはどれか。",
+      "image": null,
+      "choices": [
+        "感度",
+        "時定数",
+        "記録速度",
+        "同相弁別比",
+        "入力換算雑音"
+      ],
+      "answer": [
+        2
+      ],
+      "select": 1,
+      "text_en": "Which parameter represents the low-frequency characteristics of an electrocardiograph?",
+      "choices_en": [
+        "Sensitivity",
+        "Time constant",
+        "Recording speed",
+        "Common-mode rejection ratio",
+        "Input-referred noise"
+      ]
+    },
+    {
+      "no": 32,
+      "text": "特定小電力医用テレメータで誤っているのはどれか。",
+      "image": null,
+      "choices": [
+        "使用周波数は6つのバンドに分かれている。",
+        "420MHz～450MHz内を利用する。",
+        "混信を避けるためにゾーン配置を行う。",
+        "一つのゾーン内では同一の色ラベルの送信機を使用する。",
+        "送信出力は100mWである。"
+      ],
+      "answer": [
+        5
+      ],
+      "select": 1,
+      "text_en": "Which of the following statements about specified low-power medical telemetry is INCORRECT?",
+      "choices_en": [
+        "The frequency band is divided into 6 bands.",
+        "It uses frequencies within 420 MHz to 450 MHz.",
+        "Zone placement is used to avoid interference.",
+        "Transmitters with the same color label are used within one zone.",
+        "The transmission output is 100 mW."
+      ]
+    },
+    {
+      "no": 33,
+      "text": "パルスオキシメータのプローブに使用されるのはどれか。",
+      "image": null,
+      "choices": [
+        "圧電素子",
+        "ホール素子",
+        "サーミスタ",
+        "フォトダイオード",
+        "ストレインゲージ"
+      ],
+      "answer": [
+        4
+      ],
+      "select": 1,
+      "text_en": "Which element is used in the probe of a pulse oximeter?",
+      "choices_en": [
+        "Piezoelectric element",
+        "Hall element",
+        "Thermistor",
+        "Photodiode",
+        "Strain gauge"
+      ]
+    },
+    {
+      "no": 34,
+      "text": "セバリングハウス電極の構成要素でないのはどれか。",
+      "image": null,
+      "choices": [
+        "テフロン膜",
+        "電解液",
+        "白金電極",
+        "Ag－AgCl電極",
+        "pHガラス電極"
+      ],
+      "answer": [
+        3
+      ],
+      "select": 1,
+      "text_en": "Which of the following is NOT a component of the Severinghaus electrode?",
+      "choices_en": [
+        "Teflon membrane",
+        "Electrolyte solution",
+        "Platinum electrode",
+        "Ag-AgCl electrode",
+        "pH glass electrode"
+      ]
+    },
+    {
+      "no": 35,
+      "text": "赤外線サーモグラフで利用している法則はどれか。",
+      "image": null,
+      "choices": [
+        "ジュールの法則",
+        "ボイル・シャルルの法則",
+        "ランベルト・ベールの法則",
+        "ハーゲン・ポアズイユの法則",
+        "ステファン・ボルツマンの法則"
+      ],
+      "answer": [
+        5
+      ],
+      "select": 1,
+      "text_en": "Which law is utilized in infrared thermography?",
+      "choices_en": [
+        "Joule's law",
+        "Boyle-Charles's law",
+        "Lambert-Beer law",
+        "Hagen-Poiseuille law",
+        "Stefan-Boltzmann law"
+      ]
+    },
+    {
+      "no": 36,
+      "text": "OCT（Optical Coherence Tomography）は何の応用技術か。",
+      "image": null,
+      "choices": [
+        "光干渉計",
+        "光電子増倍管",
+        "回折格子",
+        "レーザ距離計",
+        "シンチレータ"
+      ],
+      "answer": [
+        1
+      ],
+      "select": 1,
+      "text_en": "OCT (Optical Coherence Tomography) is an application of which technology?",
+      "choices_en": [
+        "Optical interferometry",
+        "Photomultiplier tube",
+        "Diffraction grating",
+        "Laser rangefinder",
+        "Scintillator"
+      ]
+    },
+    {
+      "no": 37,
+      "text": "AEDで正しいのはどれか。",
+      "image": null,
+      "choices": [
+        "単相性波形を使用する。",
+        "2つの通電ボタンがある。",
+        "経皮ペーシングができる。",
+        "R波同期機能がある。",
+        "心室細動の検出ができる。"
+      ],
+      "answer": [
+        5
+      ],
+      "select": 1,
+      "text_en": "Which of the following is correct regarding AED?",
+      "choices_en": [
+        "It uses a monophasic waveform.",
+        "It has two shock buttons.",
+        "It can perform transcutaneous pacing.",
+        "It has an R-wave synchronization function.",
+        "It can detect ventricular fibrillation."
+      ]
+    },
+    {
+      "no": 38,
+      "text": "超音波凝固切開装置で正しいのはどれか。",
+      "image": null,
+      "choices": [
+        "凝固は摩擦熱で生じる。",
+        "電気メスに比べ高温で凝固作用をもたらす。",
+        "先端のブレードが約5MHzで振動する。",
+        "使用時には生理食塩液を灌流させる。",
+        "切開は組織の蒸散により生じる。"
+      ],
+      "answer": [
+        1
+      ],
+      "select": 1,
+      "text_en": "Which of the following is correct regarding an ultrasonic coagulation and cutting device?",
+      "choices_en": [
+        "Coagulation occurs due to frictional heat.",
+        "It coagulates at a higher temperature than an electrosurgical unit.",
+        "The tip blade vibrates at approximately 5 MHz.",
+        "Normal saline is irrigated during use.",
+        "Cutting occurs by tissue vaporization."
+      ]
+    },
+    {
+      "no": 39,
+      "text": "人工心肺回路で心筋の過伸展防止を目的とするのはどれか。",
+      "image": null,
+      "choices": [
+        "脱血回路",
+        "送血回路",
+        "ベント回路",
+        "サクション回路",
+        "心筋保護液供給回路"
+      ],
+      "answer": [
+        3
+      ],
+      "select": 1,
+      "text_en": "Which component of the cardiopulmonary bypass circuit is intended to prevent overdistension of the heart?",
+      "choices_en": [
+        "Venous drainage circuit",
+        "Arterial delivery circuit",
+        "Vent circuit",
+        "Suction circuit",
+        "Cardioplegia delivery circuit"
+      ]
+    },
+    {
+      "no": 40,
+      "text": "ECMOの構成要素でないのはどれか。",
+      "image": null,
+      "choices": [
+        "遠心ポンプ",
+        "流量計",
+        "膜型人工肺",
+        "脱血カニューレ",
+        "貯血槽"
+      ],
+      "answer": [
+        5
+      ],
+      "select": 1,
+      "text_en": "Which of the following is NOT a component of ECMO?",
+      "choices_en": [
+        "Centrifugal pump",
+        "Flow meter",
+        "Membrane oxygenator",
+        "Venous cannula",
+        "Blood reservoir"
+      ]
+    },
+    {
+      "no": 41,
+      "text": "心電図の誘導法で正しいのはどれか。",
+      "image": null,
+      "choices": [
+        "胸部誘導は右足を基準電位とする。",
+        "aVF誘導は右手と左手の電位の中点を基準電位とする。",
+        "aVL誘導は左手を負電極とする。",
+        "第Ⅰ誘導は右手を正電極、左手を負電極とする。",
+        "第Ⅱ誘導は左手を負電極、左足を正電極とする。"
+      ],
+      "answer": [
+        2
+      ],
+      "select": 1,
+      "text_en": "Which of the following statements about ECG lead methods is correct?",
+      "choices_en": [
+        "Chest leads use the right foot as the reference potential.",
+        "aVF lead uses the midpoint of right arm and left arm potentials as the reference.",
+        "aVL lead uses the left arm as the negative electrode.",
+        "Lead I uses the right arm as the positive electrode and the left arm as the negative electrode.",
+        "Lead II uses the left arm as the negative electrode and the left foot as the positive electrode."
+      ]
+    },
+    {
+      "no": 42,
+      "text": "患者情報や撮影機器の情報を含んだ医療画像フォーマットを定めた規格はどれか。",
+      "image": null,
+      "choices": [
+        "DICOM",
+        "JPEG",
+        "MPEG",
+        "TIFF",
+        "BMP"
+      ],
+      "answer": [
+        1
+      ],
+      "select": 1,
+      "text_en": "Which standard defines the medical image format that includes patient information and imaging device information?",
+      "choices_en": [
+        "DICOM",
+        "JPEG",
+        "MPEG",
+        "TIFF",
+        "BMP"
+      ]
+    },
+    {
+      "no": 43,
+      "text": "超音波ネブライザで誤っているのはどれか。",
+      "image": null,
+      "choices": [
+        "超音波で変性する薬剤がある。",
+        "ジェット式に比べ細菌汚染が生じやすい。",
+        "薬剤の到達は主気管支までである。",
+        "超音波で薬液を微細な粒子にする。",
+        "加湿過剰が起こりやすい。"
+      ],
+      "answer": [
+        3
+      ],
+      "select": 1,
+      "text_en": "Which of the following statements about ultrasonic nebulizers is INCORRECT?",
+      "choices_en": [
+        "Some drugs can be denatured by ultrasound.",
+        "Bacterial contamination is more likely than with jet nebulizers.",
+        "Drug delivery reaches only the main bronchi.",
+        "Ultrasound converts drug solution into fine particles.",
+        "Over-humidification is likely to occur."
+      ]
+    },
+    {
+      "no": 44,
+      "text": "薬液を低流量で投与するのに最も適しているのはどれか。",
+      "image": null,
+      "choices": [
+        "ローラポンプ",
+        "遠心ポンプ",
+        "輸液コントローラ",
+        "フィンガポンプ",
+        "シリンジポンプ"
+      ],
+      "answer": [
+        5
+      ],
+      "select": 1,
+      "text_en": "Which device is most suitable for administering drug solution at a low flow rate?",
+      "choices_en": [
+        "Roller pump",
+        "Centrifugal pump",
+        "Infusion controller",
+        "Finger pump",
+        "Syringe pump"
+      ]
+    },
+    {
+      "no": 45,
+      "text": "経皮的冠動脈インターベンション（PCI）に用いないのはどれか。",
+      "image": null,
+      "choices": [
+        "インデフレータ",
+        "ガイディングカテーテル",
+        "バルーンカテーテル",
+        "スワン・ガンツカテーテル",
+        "シースイントロデューサ"
+      ],
+      "answer": [
+        4
+      ],
+      "select": 1,
+      "text_en": "Which of the following is NOT used in percutaneous coronary intervention (PCI)?",
+      "choices_en": [
+        "Indeflator",
+        "Guiding catheter",
+        "Balloon catheter",
+        "Swan-Ganz catheter",
+        "Sheath introducer"
+      ]
+    },
+    {
+      "no": 46,
+      "text": "電気メスの熱傷予防で適切なのはどれか。",
+      "image": null,
+      "choices": [
+        "対極板を仙骨部に装着する。",
+        "対極板を小さく切って使用する。",
+        "装着部位を水で濡らしてから対極板を装着する。",
+        "患者の左右の踵（かかと）を接触させる。",
+        "使用時以外はアクティブ電極（メス先）をホルスタに収納する。"
+      ],
+      "answer": [
+        5
+      ],
+      "select": 1,
+      "text_en": "Which of the following is appropriate for preventing burns from electrosurgical units?",
+      "choices_en": [
+        "Attach the dispersive electrode to the sacrum.",
+        "Cut the dispersive electrode into smaller pieces.",
+        "Wet the attachment site with water before applying the dispersive electrode.",
+        "Have the patient's heels touch each other.",
+        "Store the active electrode (blade) in the holster when not in use."
+      ]
+    },
+    {
+      "no": 47,
+      "text": "レーザ治療装置の取り扱いで適切なのはどれか。",
+      "image": null,
+      "choices": [
+        "ハンドピースとフットスイッチを別々の人が操作した。",
+        "レーザがあたっている部位に目を近づけた。",
+        "レーザを下向きに照射した。",
+        "ハンドピースの位置を術者の目よりも高くした。",
+        "照射野で金属光沢のある鉗子を使用した。"
+      ],
+      "answer": [
+        3
+      ],
+      "select": 1,
+      "text_en": "Which of the following is appropriate when handling a laser therapy device?",
+      "choices_en": [
+        "The handpiece and foot switch were operated by different people.",
+        "Eyes were brought close to the area being irradiated.",
+        "The laser was irradiated downward.",
+        "The handpiece was positioned higher than the operator's eyes.",
+        "Forceps with metallic luster were used in the irradiation field."
+      ]
+    },
+    {
+      "no": 48,
+      "text": "血液透析装置が監視できないのはどれか。",
+      "image": null,
+      "choices": [
+        "気泡混入",
+        "生菌数",
+        "漏血",
+        "回路内圧力",
+        "電気伝導度"
+      ],
+      "answer": [
+        2
+      ],
+      "select": 1,
+      "text_en": "Which of the following CANNOT be monitored by a hemodialysis machine?",
+      "choices_en": [
+        "Air bubble contamination",
+        "Viable bacterial count",
+        "Blood leakage",
+        "Circuit pressure",
+        "Electrical conductivity"
+      ]
+    },
+    {
+      "no": 49,
+      "text": "血液透析中に脱血不良が起こる原因にならないのはどれか。",
+      "image": null,
+      "choices": [
+        "透析液流量の低下",
+        "留置針の先当たり",
+        "シャントの狭窄",
+        "ピロー内の血栓",
+        "脱血回路の屈曲"
+      ],
+      "answer": [
+        1
+      ],
+      "select": 1,
+      "text_en": "Which of the following does NOT cause poor blood drainage during hemodialysis?",
+      "choices_en": [
+        "Decreased dialysate flow rate",
+        "Needle tip abutting vessel wall",
+        "Shunt stenosis",
+        "Thrombus in the pillow",
+        "Bending of the blood drainage circuit"
+      ]
+    },
+    {
+      "no": 50,
+      "text": "植込み式ペースメーカに影響をおよぼす恐れが最も大きい機器はどれか。",
+      "image": null,
+      "choices": [
+        "コピー機",
+        "電気こたつ",
+        "電気カミソリ",
+        "電子商品監視装置（EAS）",
+        "デスクトップパソコン"
+      ],
+      "answer": [
+        4
+      ],
+      "select": 1,
+      "text_en": "Which device has the greatest potential to affect an implanted pacemaker?",
+      "choices_en": [
+        "Copier",
+        "Electric kotatsu",
+        "Electric razor",
+        "Electronic article surveillance (EAS) device",
+        "Desktop computer"
+      ]
+    },
+    {
+      "no": 51,
+      "text": "体外式ペースメーカの点検で用いる負荷の抵抗値［Ω］はいくらか。",
+      "image": null,
+      "choices": [
+        "5",
+        "10",
+        "50",
+        "100",
+        "500"
+      ],
+      "answer": [
+        5
+      ],
+      "select": 1,
+      "text_en": "What is the load resistance value [Ω] used in the inspection of an external pacemaker?",
+      "choices_en": [
+        "5",
+        "10",
+        "50",
+        "100",
+        "500"
+      ]
+    },
+    {
+      "no": 52,
+      "text": "図の回路で測定している漏れ電流はどれか。",
+      "image": "46_pm_q52.png",
+      "choices": [
+        "接地漏れ電流（単一故障状態）",
+        "患者漏れ電流（正常状態）",
+        "患者漏れ電流（単一故障状態）",
+        "合計患者漏れ電流（正常状態）",
+        "合計患者漏れ電流（単一故障状態）"
+      ],
+      "answer": [
+        1,
+        5
+      ],
+      "select": 2,
+      "text_en": "Which leakage current is being measured in the circuit shown in the figure?",
+      "choices_en": [
+        "Earth leakage current (single fault condition)",
+        "Patient leakage current (normal condition)",
+        "Patient leakage current (single fault condition)",
+        "Total patient leakage current (normal condition)",
+        "Total patient leakage current (single fault condition)"
+      ]
+    },
+    {
+      "no": 53,
+      "text": "心電計点検のためにシミュレータで心拍数60回/分の心電図波形を入力した。標準紙送り速さで記録した場合のR－Rの間隔［mm］はどれか。",
+      "image": "46_pm_q53.png",
+      "choices": [
+        "5",
+        "10",
+        "15",
+        "20",
+        "25"
+      ],
+      "answer": [
+        5
+      ],
+      "select": 1,
+      "text_en": "For ECG inspection, a simulator was used to input an ECG waveform at a heart rate of 60 beats/min. What is the R-R interval [mm] when recorded at standard paper speed?",
+      "choices_en": [
+        "5",
+        "10",
+        "15",
+        "20",
+        "25"
+      ]
+    },
+    {
+      "no": 54,
+      "text": "クランプメータは回路に生じる磁界を利用して電流を測定する。クランプメータを用いてある装置の消費電流を測定する際に、適切なクランプの輪の通し方はどれか。",
+      "image": "46_pm_q54.png",
+      "choices": [
+        "A（100V側のみ）",
+        "B（100V側と0V側）",
+        "C（100V側と0V側と保護接地線）",
+        "D（保護接地線のみ）",
+        "E（0V側のみ）"
+      ],
+      "answer": [
+        1
+      ],
+      "select": 1,
+      "text_en": "A clamp meter measures current using the magnetic field generated in a circuit. Which method of passing the clamp ring is appropriate for measuring the power consumption current of a device?",
+      "choices_en": [
+        "A (100V side only)",
+        "B (100V side and 0V side)",
+        "C (100V side, 0V side, and protective earth wire)",
+        "D (protective earth wire only)",
+        "E (0V side only)"
+      ]
+    },
+    {
+      "no": 55,
+      "text": "麻酔器の日常点検で誤っているのはどれか。",
+      "image": null,
+      "choices": [
+        "APL弁を開き回路内圧が低下することを確認する。",
+        "気化器オフの状態で酸素を流し無臭であることを確認する。",
+        "亜酸化窒素、酸素、治療用空気の供給圧が同じであることを確認する。",
+        "二酸化炭素吸収装置の吸収剤が白色であることを確認する。",
+        "酸素流量ゼロのとき亜酸化窒素の流量調整ができないことを確認する。"
+      ],
+      "answer": [
+        3
+      ],
+      "select": 1,
+      "text_en": "Which of the following statements about daily inspection of an anesthesia machine is INCORRECT?",
+      "choices_en": [
+        "Open the APL valve and confirm that the circuit pressure decreases.",
+        "Flow oxygen with the vaporizer off and confirm no odor.",
+        "Confirm that the supply pressure of nitrous oxide, oxygen, and medical air are the same.",
+        "Confirm that the absorbent in the CO2 absorber is white.",
+        "Confirm that nitrous oxide flow cannot be adjusted when oxygen flow is zero."
+      ]
+    },
+    {
+      "no": 56,
+      "text": "成人男性に商用交流を1秒間通電した場合の最小感知電流［mA］はどれか。",
+      "image": null,
+      "choices": [
+        "0.1",
+        "1",
+        "10",
+        "100",
+        "1000"
+      ],
+      "answer": [
+        2
+      ],
+      "select": 1,
+      "text_en": "What is the minimum perceptible current [mA] when commercial AC is passed through an adult male for 1 second?",
+      "choices_en": [
+        "0.1",
+        "1",
+        "10",
+        "100",
+        "1000"
+      ]
+    },
+    {
+      "no": 57,
+      "text": "非接地配線方式の主たる役割はどれか。",
+      "image": null,
+      "choices": [
+        "一線地絡時の停電防止",
+        "保護接地線断線時の安全確保",
+        "ミクロショックによる心室細動の防止",
+        "商用交流雑音の低減",
+        "電源供給停止時の非常電源の代替"
+      ],
+      "answer": [
+        1
+      ],
+      "select": 1,
+      "text_en": "What is the primary role of the isolated power supply system?",
+      "choices_en": [
+        "Prevention of power outage during single-line ground fault",
+        "Safety assurance when protective earth wire is disconnected",
+        "Prevention of ventricular fibrillation due to microshock",
+        "Reduction of commercial AC noise",
+        "Alternative to emergency power when power supply stops"
+      ]
+    },
+    {
+      "no": 58,
+      "text": "アラーム状態を表すJISの図記号はどれか。",
+      "image": "46_pm_q58.png",
+      "choices": [
+        "図記号1）",
+        "図記号2）",
+        "図記号3）",
+        "図記号4）",
+        "図記号5）"
+      ],
+      "answer": [
+        4
+      ],
+      "select": 1,
+      "text_en": "Which JIS symbol represents an alarm condition?",
+      "choices_en": [
+        "Symbol 1)",
+        "Symbol 2)",
+        "Symbol 3)",
+        "Symbol 4)",
+        "Symbol 5)"
+      ]
+    },
+    {
+      "no": 59,
+      "text": "JIS T 7101で酸素配管端末器の最低流量［NL/min］はいくらと規定されているか。",
+      "image": null,
+      "choices": [
+        "6",
+        "60",
+        "360",
+        "1800",
+        "5400"
+      ],
+      "answer": [
+        2
+      ],
+      "select": 1,
+      "text_en": "According to JIS T 7101, what is the minimum flow rate [NL/min] specified for oxygen pipeline terminal units?",
+      "choices_en": [
+        "6",
+        "60",
+        "360",
+        "1800",
+        "5400"
+      ]
+    },
+    {
+      "no": 60,
+      "text": "電気メスのメス先電極（アクティブ電極）でフールプルーフの概念を取り入れている部分はどれか。",
+      "image": "46_pm_q60.png",
+      "choices": [
+        "A：メス先",
+        "B：スイッチ",
+        "C：グリップ",
+        "D：コード",
+        "E：本体と接続するプラグ"
+      ],
+      "answer": [
+        5
+      ],
+      "select": 1,
+      "text_en": "Which part of the active electrode (blade) of an electrosurgical unit incorporates the concept of fool-proofing?",
+      "choices_en": [
+        "A: Blade tip",
+        "B: Switch",
+        "C: Grip",
+        "D: Cord",
+        "E: Plug connecting to main unit"
+      ]
+    }
+  ]
+}
