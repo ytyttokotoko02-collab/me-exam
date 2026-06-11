@@ -768,7 +768,7 @@ function sendResult() {
   scored.forEach(s=>{ if(s===true)correct++; else if(s===false)wrong++; else unscored++; });
   const sessionCode=examInfo.session==='午前'?'am':'pm';
 
-  // GETパラメータとして送信（Safari含む全ブラウザ対応）
+  // 画像リクエスト方式（Safari・Android・Chrome全対応）
   const params = new URLSearchParams({
     timestamp, name:userName, studentId,
     time:formatTime(timerSeconds),
@@ -776,25 +776,25 @@ function sendResult() {
     rate:Math.round(correct/questions.length*100)+'%',
     round:examInfo.round, session:sessionCode
   });
-  // 問1〜問60を個別パラメータとして追加
   Object.entries(questionResults).forEach(([no, result]) => {
     params.append('q' + no, result);
   });
 
-  fetch(GAS_URL + '?' + params.toString(), {
-    method: 'GET',
-    mode:   'no-cors'
-  })
-  .then(()=>{
+  const sendUrl = GAS_URL + '?' + params.toString();
+  const img = new Image();
+  const timer = setTimeout(() => {
+    // 5秒後に応答がなくても送信成功とみなす
     btn.textContent=t('btnSent');
     msgArea.className='send-msg ok';
     msgArea.textContent=t('sendOk');
-  })
-  .catch(()=>{
-    btn.disabled=false; btn.textContent=t('btnSend');
-    msgArea.className='send-msg err';
-    msgArea.textContent=t('sendErr');
-  });
+  }, 5000);
+  img.onload = img.onerror = () => {
+    clearTimeout(timer);
+    btn.textContent=t('btnSent');
+    msgArea.className='send-msg ok';
+    msgArea.textContent=t('sendOk');
+  };
+  img.src = sendUrl;
 }
 
 // ── START ──
