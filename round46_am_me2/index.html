@@ -768,17 +768,22 @@ function sendResult() {
   scored.forEach(s=>{ if(s===true)correct++; else if(s===false)wrong++; else unscored++; });
   const sessionCode=examInfo.session==='午前'?'am':'pm';
 
-  fetch(GAS_URL,{
-    method:'POST', mode:'no-cors',
-    headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({
-      timestamp, name:userName, studentId,
-      time:formatTime(timerSeconds),
-      correct, wrong, unscored,
-      rate:Math.round(correct/questions.length*100)+'%',
-      round:examInfo.round, session:sessionCode,
-      questions:questionResults
-    })
+  // GETパラメータとして送信（Safari含む全ブラウザ対応）
+  const params = new URLSearchParams({
+    timestamp, name:userName, studentId,
+    time:formatTime(timerSeconds),
+    correct, wrong, unscored,
+    rate:Math.round(correct/questions.length*100)+'%',
+    round:examInfo.round, session:sessionCode
+  });
+  // 問1〜問60を個別パラメータとして追加
+  Object.entries(questionResults).forEach(([no, result]) => {
+    params.append('q' + no, result);
+  });
+
+  fetch(GAS_URL + '?' + params.toString(), {
+    method: 'GET',
+    mode:   'no-cors'
   })
   .then(()=>{
     btn.textContent=t('btnSent');
