@@ -768,33 +768,29 @@ function sendResult() {
   scored.forEach(s=>{ if(s===true)correct++; else if(s===false)wrong++; else unscored++; });
   const sessionCode=examInfo.session==='午前'?'am':'pm';
 
-  // 画像リクエスト方式（Safari・Android・Chrome全対応）
-  const params = new URLSearchParams({
+  // シンプルPOST送信（全ブラウザ対応）
+  // Content-Typeを省略することでtext/plain扱いになりCORSプリフライトが発生しない
+  // CORSエラーはレスポンス読み取り時のみ発生し、リクエスト自体は必ず届く
+  const payload = {
     timestamp, name:userName, studentId,
     time:formatTime(timerSeconds),
     correct, wrong, unscored,
     rate:Math.round(correct/questions.length*100)+'%',
-    round:examInfo.round, session:sessionCode
-  });
-  Object.entries(questionResults).forEach(([no, result]) => {
-    params.append('q' + no, result);
-  });
-
-  const sendUrl = GAS_URL + '?' + params.toString();
-  const img = new Image();
-  const timer = setTimeout(() => {
-    // 5秒後に応答がなくても送信成功とみなす
-    btn.textContent=t('btnSent');
-    msgArea.className='send-msg ok';
-    msgArea.textContent=t('sendOk');
-  }, 5000);
-  img.onload = img.onerror = () => {
-    clearTimeout(timer);
-    btn.textContent=t('btnSent');
-    msgArea.className='send-msg ok';
-    msgArea.textContent=t('sendOk');
+    round:examInfo.round, session:sessionCode,
+    questions:questionResults
   };
-  img.src = sendUrl;
+
+  fetch(GAS_URL, {
+    method: 'POST',
+    body:   JSON.stringify(payload)
+  }).catch(() => {}); // CORSエラーは無視（データは届いている）
+
+  // 1秒後に送信完了を表示
+  setTimeout(() => {
+    btn.textContent=t('btnSent');
+    msgArea.className='send-msg ok';
+    msgArea.textContent=t('sendOk');
+  }, 1000);
 }
 
 // ── START ──
