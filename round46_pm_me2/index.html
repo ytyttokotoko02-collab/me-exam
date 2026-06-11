@@ -167,19 +167,32 @@
     .topbar { flex-wrap:wrap; }
 
     /* 結果画面のスマートフォン最適化 */
-    .result-big { font-size:40px; }
-    .result-sub, .result-time { font-size:13px; }
-    .result-grid { grid-template-columns:repeat(3,1fr); gap:10px; }
-    .result-card { padding:14px 8px; }
-    .result-card .rc-num { font-size:26px; }
-    .result-card .rc-label { font-size:10px; }
-    .result-review-header { font-size:11px; padding:12px 14px; }
-    .review-row { padding:10px 14px; gap:8px; font-size:12px; }
-    .review-row .rr-num { min-width:50px; font-size:11px; }
-    .result-actions { flex-direction:column; }
+    .result-screen { max-width:100%; overflow-x:hidden; }
+    .result-big { font-size:36px; }
+    .result-sub, .result-time { font-size:12px; }
+    .result-grid { grid-template-columns:repeat(3,1fr); gap:8px; margin-bottom:20px; }
+    .result-card { padding:12px 6px; }
+    .result-card .rc-num { font-size:24px; }
+    .result-card .rc-label { font-size:9px; letter-spacing:0; }
+    .result-review { margin-bottom:16px; }
+    .result-review-header { font-size:11px; padding:10px 12px; }
+    .review-row { padding:8px 12px; gap:6px; font-size:12px; }
+    .review-row .rr-num { min-width:44px; font-size:11px; }
+    .review-row .rr-text { font-size:11px; }
+    .result-actions { flex-direction:column; gap:8px; }
     .result-actions .nav-btn,
     .result-actions .btn-send { width:100%; text-align:center; }
-    .send-msg { font-size:13px; }
+    .send-msg { font-size:12px; }
+    /* トップバーのはみ出し防止 */
+    .topbar { flex-wrap:wrap; gap:8px; padding:10px 14px; }
+    .topbar-title { font-size:11px; }
+    .progress-bar-wrap { max-width:100%; }
+    .lang-toggle { margin-left:auto; }
+    /* 全体のはみ出し防止 */
+    body { overflow-x:hidden; }
+    * { max-width:100%; }
+    .choice-text { font-size:14px; }
+    .q-text { font-size:15px; }
   }
 </style>
 </head>
