@@ -165,6 +165,21 @@
     .sidebar { position:static; height:auto; border-right:none; border-bottom:1px solid var(--border); }
     .main,.result-screen { padding:24px 20px; }
     .topbar { flex-wrap:wrap; }
+
+    /* 結果画面のスマートフォン最適化 */
+    .result-big { font-size:40px; }
+    .result-sub, .result-time { font-size:13px; }
+    .result-grid { grid-template-columns:repeat(3,1fr); gap:10px; }
+    .result-card { padding:14px 8px; }
+    .result-card .rc-num { font-size:26px; }
+    .result-card .rc-label { font-size:10px; }
+    .result-review-header { font-size:11px; padding:12px 14px; }
+    .review-row { padding:10px 14px; gap:8px; font-size:12px; }
+    .review-row .rr-num { min-width:50px; font-size:11px; }
+    .result-actions { flex-direction:column; }
+    .result-actions .nav-btn,
+    .result-actions .btn-send { width:100%; text-align:center; }
+    .send-msg { font-size:13px; }
   }
 </style>
 </head>
